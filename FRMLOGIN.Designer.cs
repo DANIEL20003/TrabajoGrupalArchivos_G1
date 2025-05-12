@@ -222,9 +222,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(137, 395);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(275, 45);
+            this.label6.Size = new System.Drawing.Size(297, 45);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Ameyalli Libreria";
+            this.label6.Text = "Papeleria Ameyalli";
             // 
             // pictureBox10
             // 

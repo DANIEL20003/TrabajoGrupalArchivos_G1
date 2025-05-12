@@ -60,6 +60,18 @@
     <Compile Include="FRMLOGIN.Designer.cs">
       <DependentUpon>FRMLOGIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMMENUPRODUCTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMENUPRODUCTOS.Designer.cs">
+      <DependentUpon>FRMMENUPRODUCTOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMMODIFICAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMODIFICAR.Designer.cs">
+      <DependentUpon>FRMMODIFICAR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistroUsuario.cs">
@@ -73,6 +85,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMLOGIN.resx">
       <DependentUpon>FRMLOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMENUPRODUCTOS.resx">
+      <DependentUpon>FRMMENUPRODUCTOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMODIFICAR.resx">
+      <DependentUpon>FRMMODIFICAR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,6 +168,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\retroceder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IngresarP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModificarP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EliminarP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuscarP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

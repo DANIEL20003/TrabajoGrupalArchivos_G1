@@ -34,6 +34,15 @@ namespace WinAppArchivosGrupo1
             label1.Text = bienvenida + espacio + nombre;
         }
 
-       
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FRMMENUPRODUCTOS objmenuproductos = new FRMMENUPRODUCTOS();
+            objmenuproductos.Show();
+        }
     }
 }
