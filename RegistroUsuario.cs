@@ -119,6 +119,11 @@ namespace WinAppArchivosGrupo1
 
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
