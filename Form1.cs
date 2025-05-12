@@ -12,12 +12,28 @@ namespace WinAppArchivosGrupo1
 {
     public partial class Form1 : Form
     {
+
+        string bienvenida = "Bienvenido";
+        string espacio = "  "; 
         public Form1()
         {
             InitializeComponent();
-            //prueba
-            //en que parte le abro el form :v aqui en vscode?
+        
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Archivos archivos = new Archivos();
+            archivos.crearArchivoXml();
+        }
+        
+        public void RecibirInformacion(string informacion)
+        {
+            string nombre = informacion;
+            label1.Text = bienvenida + espacio + nombre;
+        }
+
+       
     }
 }
