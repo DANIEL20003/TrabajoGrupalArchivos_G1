@@ -533,6 +533,9 @@ namespace WinAppArchivosGrupo1 {
                 base.Columns.Add(this.columnUnidad_Venta);
                 this.columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDescripcion);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("TBL_ProductosKey1", new global::System.Data.DataColumn[] {
+                                this.columnCodigo}, false));
+                this.columnCodigo.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
