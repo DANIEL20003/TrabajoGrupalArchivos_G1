@@ -59,6 +59,7 @@ namespace WinAppArchivosGrupo1
         {
             txtCod.Focus();
             string ruta = AppDomain.CurrentDomain.BaseDirectory;
+
             dataSet11.ReadXml(Path.Combine(ruta, "Inventario.xml"));
             panel2.Visible = false;
         }

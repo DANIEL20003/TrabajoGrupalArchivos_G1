@@ -306,7 +306,7 @@ namespace WinAppArchivosGrupo1
             this.pictureBox8.Location = new System.Drawing.Point(2, 3);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(67, 32);
+            this.pictureBox8.Size = new System.Drawing.Size(43, 32);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 33;
             this.pictureBox8.TabStop = false;
@@ -327,11 +327,11 @@ namespace WinAppArchivosGrupo1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Viner Hand ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(170, 20);
+            this.label2.Location = new System.Drawing.Point(241, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(426, 52);
+            this.label2.Size = new System.Drawing.Size(324, 52);
             this.label2.TabIndex = 11;
-            this.label2.Text = "PAPELERIA AMEYALLI";
+            this.label2.Text = "Edición de Producto";
             // 
             // pictureBox6
             // 

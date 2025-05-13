@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -69,15 +69,6 @@
             this.panel1.Size = new System.Drawing.Size(800, 100);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Plum;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 390);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 41);
-            this.panel2.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -88,6 +79,15 @@
             this.label1.Size = new System.Drawing.Size(463, 78);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ingreso de Producto";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Plum;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 390);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 41);
+            this.panel2.TabIndex = 1;
             // 
             // label2
             // 

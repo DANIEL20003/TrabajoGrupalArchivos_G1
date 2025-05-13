@@ -14,19 +14,6 @@
     <Descripcion>esto es una prueba para ver si se crea una carpeta que contenga la base de datos para trabajar</Descripcion>
   </TBL_Productos>
   <TBL_Productos>
-    <Codigo>1</Codigo>
-    <Tipo>Lápices</Tipo>
-    <Color>Rojo</Color>
-    <Precio>2</Precio>
-    <Volumen>Pequeño</Volumen>
-    <Marca>Bic</Marca>
-    <Proveedor>3</Proveedor>
-    <Material>Madera</Material>
-    <Stock>4</Stock>
-    <Unidad_Venta>Unidad</Unidad_Venta>
-    <Descripcion>fdljsjl</Descripcion>
-  </TBL_Productos>
-  <TBL_Productos>
     <Codigo>2</Codigo>
     <Tipo>Lápices</Tipo>
     <Color>Rojo</Color>
@@ -38,5 +25,44 @@
     <Stock>7</Stock>
     <Unidad_Venta>Unidad</Unidad_Venta>
     <Descripcion>23</Descripcion>
+  </TBL_Productos>
+  <TBL_Productos>
+    <Codigo>2222</Codigo>
+    <Tipo>Cuadernos</Tipo>
+    <Color>Negro</Color>
+    <Precio>45</Precio>
+    <Volumen>Pequeño</Volumen>
+    <Marca>Stabilo</Marca>
+    <Proveedor>carrera</Proveedor>
+    <Material>Madera</Material>
+    <Stock>34</Stock>
+    <Unidad_Venta>Docena</Unidad_Venta>
+    <Descripcion>prueba 2</Descripcion>
+  </TBL_Productos>
+  <TBL_Productos>
+    <Codigo>9876</Codigo>
+    <Tipo>Estuches</Tipo>
+    <Color>Negro</Color>
+    <Precio>56</Precio>
+    <Volumen>Mediano</Volumen>
+    <Marca>Milan</Marca>
+    <Proveedor>cartera</Proveedor>
+    <Material>Papel/Cartón</Material>
+    <Stock>45</Stock>
+    <Unidad_Venta>Paquete</Unidad_Venta>
+    <Descripcion>prueba 3</Descripcion>
+  </TBL_Productos>
+  <TBL_Productos>
+    <Codigo>2468</Codigo>
+    <Tipo>Cuadernos</Tipo>
+    <Color>Rosa</Color>
+    <Precio>56</Precio>
+    <Volumen>Mediano</Volumen>
+    <Marca>Norma</Marca>
+    <Proveedor>hola</Proveedor>
+    <Material>Madera</Material>
+    <Stock>34</Stock>
+    <Unidad_Venta>Docena</Unidad_Venta>
+    <Descripcion>prueba 4</Descripcion>
   </TBL_Productos>
 </DataSet1>

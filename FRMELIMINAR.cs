@@ -13,6 +13,7 @@ namespace WinAppArchivosGrupo1
 {
     public partial class FRMELIMINAR : Form
     {
+
         System.Data.DataRow[] Vector;
         public FRMELIMINAR()
         {
@@ -22,7 +23,9 @@ namespace WinAppArchivosGrupo1
         private void FRMELIMINAR_Load(object sender, EventArgs e)
         {
             txtCod.Focus();
-            string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Productos.xml");
+            string rutaProyecto = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+            string rutaResources = Path.Combine(rutaProyecto, "Base_de_Datos");
+            string rutaArchivo = Path.Combine(rutaResources, "Productos.xml");
             dataSet11.ReadXml(rutaArchivo);
             panel2.Visible = false;
         }
@@ -84,7 +87,9 @@ namespace WinAppArchivosGrupo1
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             Vector[0].Delete();
-            string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Productos.xml");
+            string rutaProyecto = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+            string rutaResources = Path.Combine(rutaProyecto, "Base_de_Datos");
+            string rutaArchivo = Path.Combine(rutaResources, "Productos.xml");
             dataSet11.WriteXml(rutaArchivo);
             MessageBox.Show("Se ha eliminado exitosamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
