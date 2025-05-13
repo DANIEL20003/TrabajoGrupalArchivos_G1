@@ -41,6 +41,7 @@ namespace WinAppArchivosGrupo1
                     new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", ds.Tables[0])
                 );
 
+
                 reportViewer1.RefreshReport();
             }
             else
