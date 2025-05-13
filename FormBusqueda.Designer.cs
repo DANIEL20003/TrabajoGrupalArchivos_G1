@@ -34,7 +34,6 @@
             this.DGV_1 = new System.Windows.Forms.DataGridView();
             this.LBL_txtcodigo = new System.Windows.Forms.Label();
             this.TB_codigo = new System.Windows.Forms.TextBox();
-            this.TB_tipo = new System.Windows.Forms.TextBox();
             this.LBL_txttipo = new System.Windows.Forms.Label();
             this.BTN_buscar = new System.Windows.Forms.Button();
             this.dataSet1 = new WinAppArchivosGrupo1.DataSet1();
@@ -53,6 +52,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.RB_codigo = new System.Windows.Forms.RadioButton();
             this.RB_tipo = new System.Windows.Forms.RadioButton();
+            this.CB_tipo = new System.Windows.Forms.ComboBox();
             this.PNL_BuscarProductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
@@ -123,15 +123,6 @@
             this.TB_codigo.TabIndex = 3;
             this.TB_codigo.Visible = false;
             this.TB_codigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_codigo_KeyPress);
-            // 
-            // TB_tipo
-            // 
-            this.TB_tipo.Location = new System.Drawing.Point(329, 135);
-            this.TB_tipo.Name = "TB_tipo";
-            this.TB_tipo.Size = new System.Drawing.Size(178, 20);
-            this.TB_tipo.TabIndex = 5;
-            this.TB_tipo.Visible = false;
-            this.TB_tipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_tipo_KeyPress);
             // 
             // LBL_txttipo
             // 
@@ -268,17 +259,38 @@
             this.RB_tipo.Text = "Tipo";
             this.RB_tipo.UseVisualStyleBackColor = true;
             // 
+            // CB_tipo
+            // 
+            this.CB_tipo.FormattingEnabled = true;
+            this.CB_tipo.Items.AddRange(new object[] {
+            "Lápices",
+            "Bolígrafos",
+            "Cuadernos",
+            "Gomas de borrar",
+            "Sacapuntas",
+            "Reglas",
+            "Tijeras",
+            "Pegamento",
+            "Mochilas",
+            "Estuches",
+            "Rotuladores",
+            "Compás"});
+            this.CB_tipo.Location = new System.Drawing.Point(329, 136);
+            this.CB_tipo.Name = "CB_tipo";
+            this.CB_tipo.Size = new System.Drawing.Size(178, 21);
+            this.CB_tipo.TabIndex = 10;
+            // 
             // FormBusqueda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(941, 401);
+            this.Controls.Add(this.CB_tipo);
             this.Controls.Add(this.RB_tipo);
             this.Controls.Add(this.RB_codigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BTN_buscar);
-            this.Controls.Add(this.TB_tipo);
             this.Controls.Add(this.LBL_txttipo);
             this.Controls.Add(this.TB_codigo);
             this.Controls.Add(this.LBL_txtcodigo);
@@ -303,7 +315,6 @@
         private System.Windows.Forms.DataGridView DGV_1;
         private System.Windows.Forms.Label LBL_txtcodigo;
         private System.Windows.Forms.TextBox TB_codigo;
-        private System.Windows.Forms.TextBox TB_tipo;
         private System.Windows.Forms.Label LBL_txttipo;
         private System.Windows.Forms.Button BTN_buscar;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoDataGridViewTextBoxColumn;
@@ -322,5 +333,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton RB_codigo;
         private System.Windows.Forms.RadioButton RB_tipo;
+        private System.Windows.Forms.ComboBox CB_tipo;
     }
 }

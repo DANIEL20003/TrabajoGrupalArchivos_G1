@@ -14,94 +14,36 @@ namespace WinAppArchivosGrupo1
     public partial class FormBusqueda : Form
     {
         string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Productos.xml");
+
         public FormBusqueda()
         {
             InitializeComponent();
-            // Opcional: inicializa estado
-            RB_codigo.Checked = true; // por defecto muestra código
 
-            LBL_txttipo.Visible = false;
-            TB_tipo.Visible = false;
-        }
+            // Estado inicial: búsqueda por código
+            RB_codigo.Checked = true;
 
-        private void TB_codigo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            try
-            {
-                if(e.KeyChar == (char)Keys.Enter)
-                {
-                    
-                    if (string.IsNullOrWhiteSpace(TB_codigo.Text))
-                    {
-                        MessageBox.Show("Debe ingresar el código del producto.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
+            // Mostrar controles solo para código al inicio
+            LBL_txtcodigo.Visible = TB_codigo.Visible = true;
+            LBL_txttipo.Visible = CB_tipo.Visible = false;
 
-                    TB_tipo.Focus();
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Ingrese un código para buscar el producto", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                TB_codigo.Clear();
-            }
-        }
+            // Eventos
+            RB_codigo.CheckedChanged += RB_codigo_CheckedChanged;
+            RB_tipo.CheckedChanged += RB_tipo_CheckedChanged;
 
-        private void TB_tipo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            try
-            {
-                if (e.KeyChar == (char)Keys.Enter)
-                {
-                    if (string.IsNullOrWhiteSpace(TB_tipo.Text) || string.IsNullOrWhiteSpace(TB_codigo.Text))
-                    {
-                        MessageBox.Show("Debe ingresar el código y el tipo del producto.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
+            TB_codigo.KeyPress += TB_codigo_KeyPress;
+            CB_tipo.KeyPress += CB_tipo_KeyPress;
 
-                    // Cargar el XML al DataSet
-                    dataSet1.Clear(); // Limpiar antes de cargar para evitar duplicados
-                    dataSet1.ReadXml(rutaArchivo);
-
-                    // Buscar los productos que coincidan con el código y tipo ingresados
-                    string filtro = $"Codigo = '{TB_codigo.Text}' AND Tipo = '{TB_tipo.Text}'";
-                    DataRow[] productosFiltrados = dataSet1.TBL_Productos.Select(filtro);
-
-                    // Verificar si encontró productos
-                    if (productosFiltrados.Length > 0)
-                    {
-                        // Crear una tabla temporal para mostrar solo los resultados encontrados
-                        DataTable tablaResultado = dataSet1.TBL_Productos.Clone(); // copia estructura sin datos
-                        foreach (DataRow fila in productosFiltrados)
-                        {
-                            tablaResultado.ImportRow(fila);
-                        }
-
-                        DGV_1.DataSource = tablaResultado; // Mostrar los datos encontrados
-                    }
-                    else
-                    {
-                        MessageBox.Show("Producto no encontrado con ese código y tipo.", "No encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        DGV_1.DataSource = null;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al buscar el producto: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            BTN_buscar.Click += BTN_buscar_Click;
         }
 
         private void RB_codigo_CheckedChanged(object sender, EventArgs e)
         {
             if (RB_codigo.Checked)
             {
-                // Mostrar solo los controles relacionados al código
-                LBL_txtcodigo.Visible = true;
-                TB_codigo.Visible = true;
-
-                LBL_txttipo.Visible = false;
-                TB_tipo.Visible = false;
+                LBL_txtcodigo.Visible = TB_codigo.Visible = true;
+                LBL_txttipo.Visible = CB_tipo.Visible = false;
+                CB_tipo.SelectedIndex = -1; // Limpiar selección
+                TB_codigo.Focus();
             }
         }
 
@@ -109,12 +51,93 @@ namespace WinAppArchivosGrupo1
         {
             if (RB_tipo.Checked)
             {
-                // Mostrar solo los controles relacionados al tipo
-                LBL_txttipo.Visible = true;
-                TB_tipo.Visible = true;
+                LBL_txttipo.Visible = CB_tipo.Visible = true;
+                LBL_txtcodigo.Visible = TB_codigo.Visible = false;
+                TB_codigo.Clear(); // Limpiar campo
+                CB_tipo.Focus();
+            }
+        }
 
-                LBL_txtcodigo.Visible = false;
-                TB_codigo.Visible = false;
+        private void TB_codigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (RB_codigo.Checked && e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                BuscarProducto();
+            }
+        }
+
+        private void CB_tipo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (RB_tipo.Checked && e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                BuscarProducto();
+            }
+        }
+
+        private void BTN_buscar_Click(object sender, EventArgs e)
+        {
+            BuscarProducto();
+        }
+
+        private void BuscarProducto()
+        {
+            try
+            {
+                // Validaciones
+                if (RB_codigo.Checked)
+                {
+                    if (string.IsNullOrWhiteSpace(TB_codigo.Text))
+                    {
+                        MessageBox.Show("Ingrese el código del producto.", "ERROR",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+                else
+                {
+                    if (string.IsNullOrWhiteSpace(CB_tipo.Text))
+                    {
+                        MessageBox.Show("Seleccione el tipo de producto.", "ERROR",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+
+                // Leer XML
+                dataSet1.Clear();
+                dataSet1.ReadXml(rutaArchivo);
+
+                // Filtro
+                string filtro;
+                if (RB_codigo.Checked)
+                    filtro = $"Codigo = '{TB_codigo.Text.Trim()}'";
+                else
+                    filtro = $"Tipo = '{CB_tipo.Text.Trim()}'";
+
+                // Filtrar filas
+                DataRow[] encontrados = dataSet1.TBL_Productos.Select(filtro);
+
+                if (encontrados.Length > 0)
+                {
+                    DataTable tablaResultado = dataSet1.TBL_Productos.Clone();
+                    foreach (DataRow r in encontrados)
+                        tablaResultado.ImportRow(r);
+
+                    DGV_1.DataSource = tablaResultado;
+                }
+                else
+                {
+                    MessageBox.Show("No se encontraron productos.", "Sin resultados",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DGV_1.DataSource = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar: " + ex.Message, "ERROR",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
