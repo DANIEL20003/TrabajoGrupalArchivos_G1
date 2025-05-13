@@ -13,12 +13,16 @@ namespace WinAppArchivosGrupo1
 {
     public partial class FRNreporte6 : Form
     {
+        string rutaArchivo;
         public FRNreporte6()
         {
             InitializeComponent();
+            
+            
             string rutaProyecto = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
             string rutaResources = Path.Combine(rutaProyecto, "Base_de_Datos");
-            string rutaArchivo = Path.Combine(rutaResources, "Productos.xml");
+            rutaArchivo = Path.Combine(rutaResources, "Productos.xml");
+            
 
         }
 
@@ -26,6 +30,23 @@ namespace WinAppArchivosGrupo1
         {
 
             this.reportViewer1.RefreshReport();
+            if (File.Exists(rutaArchivo))
+            {
+                DataSet ds = new DataSet();
+                ds.ReadXml(rutaArchivo);
+
+                // Asumiendo que tu ReportViewer espera una tabla llamada "Producto"
+                reportViewer1.LocalReport.DataSources.Clear();
+                reportViewer1.LocalReport.DataSources.Add(
+                    new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", ds.Tables[0])
+                );
+
+                reportViewer1.RefreshReport();
+            }
+            else
+            {
+                MessageBox.Show("El archivo Productos.xml no se encontró.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)
