@@ -24,7 +24,7 @@ namespace WinAppArchivosGrupo1
 
         private void FRMINGRESOPRODUCTO_Load(object sender, EventArgs e)
         {
-
+            this.ActiveControl = TXT_codigo;
         }
 
         private void TXT_codigo_KeyPress(object sender, KeyPressEventArgs e)
