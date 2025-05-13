@@ -32,5 +32,11 @@ namespace WinAppArchivosGrupo1
             FRMMODIFICAR objmodificarproductos = new FRMMODIFICAR();
             objmodificarproductos.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FRMINGRESOPRODUCTO objIngresoProd = new FRMINGRESOPRODUCTO();
+            objIngresoProd.ShowDialog();
+        }
     }
 }

@@ -54,7 +54,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.TXT_descript = new System.Windows.Forms.TextBox();
             this.BTN_Ingresar = new System.Windows.Forms.Button();
+            this.dataSet11 = new WinAppArchivosGrupo1.DataSet1();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,7 +83,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Viner Hand ITC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(172, 9);
+            this.label1.Location = new System.Drawing.Point(172, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(463, 78);
             this.label1.TabIndex = 2;
@@ -300,6 +302,11 @@
             this.BTN_Ingresar.Text = "Ingresar";
             this.BTN_Ingresar.UseVisualStyleBackColor = false;
             // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // FRMINGRESOPRODUCTO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,6 +341,7 @@
             this.Text = "FRMINGRESOPRODUCTO";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,5 +375,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox TXT_descript;
         private System.Windows.Forms.Button BTN_Ingresar;
+        private DataSet1 dataSet11;
     }
 }
