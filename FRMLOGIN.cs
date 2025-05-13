@@ -115,6 +115,14 @@ namespace WinAppArchivosGrupo1
         {
 
         }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                btnregistrar.PerformClick();
+            }
+        }
     }
     }
     

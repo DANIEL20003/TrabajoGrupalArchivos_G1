@@ -42,7 +42,9 @@ namespace WinAppArchivosGrupo1
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error del tipo: {ex.Message}");
+                MessageBox.Show($"Error del tipo: {ex.Message}", "Se presentó un error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCod.Clear();
                 txtCod.Focus();
             }
 

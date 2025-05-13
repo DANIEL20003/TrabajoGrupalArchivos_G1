@@ -101,7 +101,7 @@ namespace WinAppArchivosGrupo1
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Location = new System.Drawing.Point(16, 170);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(773, 213);
             this.panel2.TabIndex = 84;
@@ -304,7 +304,7 @@ namespace WinAppArchivosGrupo1
             // 
             this.pictureBox8.Image = global::WinAppArchivosGrupo1.Properties.Resources.retroceder;
             this.pictureBox8.Location = new System.Drawing.Point(2, 3);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(67, 32);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -355,7 +355,7 @@ namespace WinAppArchivosGrupo1
             // 
             this.btnBuscar.Image = global::WinAppArchivosGrupo1.Properties.Resources.buscar;
             this.btnBuscar.Location = new System.Drawing.Point(465, 128);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(52, 26);
             this.btnBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -379,7 +379,7 @@ namespace WinAppArchivosGrupo1
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtCod);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FRMMODIFICAR";
             this.Text = "FRMMODIFICAR";
             this.Load += new System.EventHandler(this.FRMMODIFICAR_Load);
