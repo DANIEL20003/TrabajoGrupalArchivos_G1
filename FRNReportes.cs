@@ -31,5 +31,11 @@ namespace WinAppArchivosGrupo1
         {
 
         }
+
+        private void Reporte6_Click(object sender, EventArgs e)
+        {
+            FRNreporte6 objtr6 = new FRNreporte6();
+            objtr6.ShowDialog();
+        }
     }
 }
