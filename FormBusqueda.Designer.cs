@@ -86,6 +86,7 @@
             this.TB_codigo.Name = "TB_codigo";
             this.TB_codigo.Size = new System.Drawing.Size(178, 20);
             this.TB_codigo.TabIndex = 3;
+            this.TB_codigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_codigo_KeyPress);
             // 
             // TB_tipo
             // 

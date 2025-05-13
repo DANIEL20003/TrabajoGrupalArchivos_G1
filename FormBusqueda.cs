@@ -16,5 +16,10 @@ namespace WinAppArchivosGrupo1
         {
             InitializeComponent();
         }
+
+        private void TB_codigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }
