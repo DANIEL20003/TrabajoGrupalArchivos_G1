@@ -157,7 +157,18 @@ namespace WinAppArchivosGrupo1
             try
             {
                 //Ruta del archivo XML (se guardará en la carpeta del ejecutable)
-                string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Productos.xml");
+                //string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Productos.xml");
+
+                // Obtener la ruta del directorio del proyecto (fuera de \bin\Debug)
+                string rutaProyecto = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+                string rutaResources = Path.Combine(rutaProyecto, "Base_de_Datos");
+                string rutaArchivo = Path.Combine(rutaResources, "Productos.xml");
+
+                // Si la carpeta Resources no existe, créala
+                if (!Directory.Exists(rutaResources))
+                {
+                    Directory.CreateDirectory(rutaResources);
+                }
 
                 //Verificar si el archivo XML existe
                 if (!File.Exists(rutaArchivo))

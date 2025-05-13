@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSet1 xmlns="http://tempuri.org/DataSet1.xsd">
+  <TBL_Productos>
+    <Codigo>4321</Codigo>
+    <Tipo>Bolígrafos</Tipo>
+    <Color>Rosa</Color>
+    <Precio>34</Precio>
+    <Volumen>Extra Grande</Volumen>
+    <Marca>Milan</Marca>
+    <Proveedor>gadvay</Proveedor>
+    <Material>Goma</Material>
+    <Stock>45</Stock>
+    <Unidad_Venta>Caja</Unidad_Venta>
+    <Descripcion>esto es una prueba para ver si se crea una carpeta que contenga la base de datos para trabajar</Descripcion>
+  </TBL_Productos>
+</DataSet1>
