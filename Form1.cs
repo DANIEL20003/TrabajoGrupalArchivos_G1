@@ -44,5 +44,11 @@ namespace WinAppArchivosGrupo1
             FRMMENUPRODUCTOS objmenuproductos = new FRMMENUPRODUCTOS();
             objmenuproductos.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            FRNReportes objreportes = new FRNReportes();
+            objreportes.Show();
+        }
     }
 }

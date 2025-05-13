@@ -25,8 +25,9 @@ namespace WinAppArchivosGrupo1
         {
             try
             {
+                //aqui edite donde decia verdura para que se pueda usar para cualquier producto desde la tabla TBl_Productos
                 codigo = Convert.ToInt32(txtCod.Text.Trim());
-                vectRow = dataSet11.Verdura.Select("codigover =" + codigo.ToString());
+                vectRow = dataSet11.TBL_Productos.Select("codigover =" + codigo.ToString());
 
                 if (vectRow.Length > 0)
                 {
