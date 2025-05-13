@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
 
 namespace WinAppArchivosGrupo1
 {
@@ -60,10 +61,31 @@ namespace WinAppArchivosGrupo1
             txtCod.Focus();
             string ruta = AppDomain.CurrentDomain.BaseDirectory;
 
-            dataSet11.ReadXml(Path.Combine(ruta, "Inventario.xml"));
+            dataSet11.ReadXml(Path.Combine(ruta, "Productos.xml"));
             panel2.Visible = false;
-        }
 
+            /*
+                //modificar la ruts if (File.Exists(rutaArchivo))
+            {
+                DataSet ds = new DataSet();
+                ds.ReadXml(rutaArchivo);
+
+                // Asumiendo que tu ReportViewer espera una tabla llamada "Producto"
+                reportViewer1.LocalReport.DataSources.Clear();
+                reportViewer1.LocalReport.DataSources.Add(
+                    new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", ds.Tables[0])
+                );
+
+
+                reportViewer1.RefreshReport();
+            }
+            else
+            {
+                MessageBox.Show("El archivo Productos.xml no se encontró.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            */
+        }
+     
         private void button1_Click(object sender, EventArgs e)
         {
             try
