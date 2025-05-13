@@ -459,7 +459,7 @@ namespace WinAppArchivosGrupo1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TBL_ProductosRow AddTBL_ProductosRow(string Codigo, string Tipo, string Color, double Precio, double Volumen, string Marca, string Proveedor, string Material, int Stock, string Unidad_Venta, string Descripcion) {
+            public TBL_ProductosRow AddTBL_ProductosRow(string Codigo, string Tipo, string Color, double Precio, string Volumen, string Marca, string Proveedor, string Material, int Stock, string Unidad_Venta, string Descripcion) {
                 TBL_ProductosRow rowTBL_ProductosRow = ((TBL_ProductosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Codigo,
@@ -519,7 +519,7 @@ namespace WinAppArchivosGrupo1 {
                 base.Columns.Add(this.columnColor);
                 this.columnPrecio = new global::System.Data.DataColumn("Precio", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPrecio);
-                this.columnVolumen = new global::System.Data.DataColumn("Volumen", typeof(double), null, global::System.Data.MappingType.Element);
+                this.columnVolumen = new global::System.Data.DataColumn("Volumen", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVolumen);
                 this.columnMarca = new global::System.Data.DataColumn("Marca", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMarca);
@@ -739,10 +739,10 @@ namespace WinAppArchivosGrupo1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double Volumen {
+            public string Volumen {
                 get {
                     try {
-                        return ((double)(this[this.tableTBL_Productos.VolumenColumn]));
+                        return ((string)(this[this.tableTBL_Productos.VolumenColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'Volumen\' de la tabla \'TBL_Productos\' es DBNull.", e);
