@@ -162,14 +162,14 @@ namespace WinAppArchivosGrupo1
                 //Verificar si el archivo XML existe
                 if (!File.Exists(rutaArchivo))
                 {
-                    dataSet11.Clear();
-                    dataSet11.WriteXml(rutaArchivo);
+                    dataSet11.TBL_Productos.Clear();
+                    dataSet11.TBL_Productos.WriteXml(rutaArchivo);
                 }
                 else
                 {
                     // Si existe, cargar los datos existentes
-                    dataSet11.Clear();
-                    dataSet11.ReadXml(rutaArchivo);
+                    dataSet11.TBL_Productos.Clear();
+                    dataSet11.TBL_Productos.ReadXml(rutaArchivo);
                 }
 
                 //Vector con los valores de los campos
@@ -192,7 +192,7 @@ namespace WinAppArchivosGrupo1
                 dataSet11.TBL_Productos.Rows.Add(nuevoProducto);
 
                 //Guardar
-                dataSet11.WriteXml(rutaArchivo);
+                dataSet11.TBL_Productos.WriteXml(rutaArchivo);
 
                 MessageBox.Show("Producto ingresado correctamente.", "Éxito",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
