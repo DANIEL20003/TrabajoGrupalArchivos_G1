@@ -147,6 +147,9 @@ namespace WinAppArchivosGrupo1
             }
         }
 
+        private void FormBusqueda_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
