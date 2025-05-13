@@ -42,7 +42,7 @@ namespace WinAppArchivosGrupo1
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             FRMMENUPRODUCTOS objmenuproductos = new FRMMENUPRODUCTOS();
-            objmenuproductos.Show();
+            objmenuproductos.Show();// hola mundo
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
