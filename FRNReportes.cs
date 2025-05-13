@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WinAppArchivosGrupo1
+{
+    public partial class FRNReportes : Form
+    {
+        public FRNReportes()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Reporte6_Click(object sender, EventArgs e)
+        {
+            FRNreporte6 objtr6 = new FRNreporte6();
+            objtr6.ShowDialog();
+        }
+    }
+}

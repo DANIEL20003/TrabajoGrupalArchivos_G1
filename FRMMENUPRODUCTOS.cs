@@ -32,5 +32,23 @@ namespace WinAppArchivosGrupo1
             FRMMODIFICAR objmodificarproductos = new FRMMODIFICAR();
             objmodificarproductos.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FRMINGRESOPRODUCTO objIngresoProd = new FRMINGRESOPRODUCTO();
+            objIngresoProd.ShowDialog();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            FRMELIMINAR objEliminar = new FRMELIMINAR();
+            objEliminar.ShowDialog();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            FormBusqueda objBuscar=new FormBusqueda();
+            objBuscar.ShowDialog(); 
+        }
     }
 }

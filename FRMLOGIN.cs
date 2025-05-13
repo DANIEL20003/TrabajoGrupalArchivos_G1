@@ -17,7 +17,7 @@ namespace WinAppArchivosGrupo1
     public partial class FRMLOGIN : Form
     {
         private SoundPlayer soundPlayer;
-        String usuario4 = "Erick Yumi";
+        String usuario4 = "Erik Yumi";
         String usuario1 = "Daniel Quiguiri";
         String usuario2 = "Danny Allauca";
         String usuario3 = "Angel Gadvay";
@@ -114,6 +114,14 @@ namespace WinAppArchivosGrupo1
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                btnregistrar.PerformClick();
+            }
         }
     }
     }
