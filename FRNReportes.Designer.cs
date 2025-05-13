@@ -30,14 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRNReportes));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Reporte1 = new System.Windows.Forms.Button();
-            this.Reporte2 = new System.Windows.Forms.Button();
-            this.Reporte3 = new System.Windows.Forms.Button();
-            this.Reporte4 = new System.Windows.Forms.Button();
-            this.Reporte5 = new System.Windows.Forms.Button();
-            this.Reporte6 = new System.Windows.Forms.Button();
-            this.Reporte7 = new System.Windows.Forms.Button();
-            this.Reporte8 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,9 +39,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -65,9 +55,17 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Reporte8 = new System.Windows.Forms.Button();
+            this.Reporte7 = new System.Windows.Forms.Button();
+            this.Reporte6 = new System.Windows.Forms.Button();
+            this.Reporte1 = new System.Windows.Forms.Button();
+            this.Reporte2 = new System.Windows.Forms.Button();
+            this.Reporte3 = new System.Windows.Forms.Button();
+            this.Reporte4 = new System.Windows.Forms.Button();
+            this.Reporte5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -76,6 +74,8 @@
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -90,86 +90,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // Reporte1
+            // label9
             // 
-            this.Reporte1.BackColor = System.Drawing.Color.Transparent;
-            this.Reporte1.BackgroundImage = global::WinAppArchivosGrupo1.Properties.Resources.Reportes;
-            this.Reporte1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Reporte1.Location = new System.Drawing.Point(73, 154);
-            this.Reporte1.Name = "Reporte1";
-            this.Reporte1.Size = new System.Drawing.Size(113, 120);
-            this.Reporte1.TabIndex = 0;
-            this.Reporte1.UseVisualStyleBackColor = false;
-            // 
-            // Reporte2
-            // 
-            this.Reporte2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte2.BackgroundImage")));
-            this.Reporte2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Reporte2.Location = new System.Drawing.Point(274, 154);
-            this.Reporte2.Name = "Reporte2";
-            this.Reporte2.Size = new System.Drawing.Size(113, 120);
-            this.Reporte2.TabIndex = 1;
-            this.Reporte2.UseVisualStyleBackColor = true;
-            // 
-            // Reporte3
-            // 
-            this.Reporte3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte3.BackgroundImage")));
-            this.Reporte3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Reporte3.Location = new System.Drawing.Point(481, 154);
-            this.Reporte3.Name = "Reporte3";
-            this.Reporte3.Size = new System.Drawing.Size(113, 120);
-            this.Reporte3.TabIndex = 2;
-            this.Reporte3.UseVisualStyleBackColor = true;
-            // 
-            // Reporte4
-            // 
-            this.Reporte4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte4.BackgroundImage")));
-            this.Reporte4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Reporte4.Location = new System.Drawing.Point(685, 154);
-            this.Reporte4.Name = "Reporte4";
-            this.Reporte4.Size = new System.Drawing.Size(113, 120);
-            this.Reporte4.TabIndex = 3;
-            this.Reporte4.UseVisualStyleBackColor = true;
-            // 
-            // Reporte5
-            // 
-            this.Reporte5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte5.BackgroundImage")));
-            this.Reporte5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Reporte5.Location = new System.Drawing.Point(73, 397);
-            this.Reporte5.Name = "Reporte5";
-            this.Reporte5.Size = new System.Drawing.Size(113, 120);
-            this.Reporte5.TabIndex = 4;
-            this.Reporte5.UseVisualStyleBackColor = true;
-            // 
-            // Reporte6
-            // 
-            this.Reporte6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte6.BackgroundImage")));
-            this.Reporte6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Reporte6.Location = new System.Drawing.Point(274, 397);
-            this.Reporte6.Name = "Reporte6";
-            this.Reporte6.Size = new System.Drawing.Size(113, 120);
-            this.Reporte6.TabIndex = 5;
-            this.Reporte6.UseVisualStyleBackColor = true;
-            // 
-            // Reporte7
-            // 
-            this.Reporte7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte7.BackgroundImage")));
-            this.Reporte7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Reporte7.Location = new System.Drawing.Point(481, 397);
-            this.Reporte7.Name = "Reporte7";
-            this.Reporte7.Size = new System.Drawing.Size(113, 120);
-            this.Reporte7.TabIndex = 6;
-            this.Reporte7.UseVisualStyleBackColor = true;
-            // 
-            // Reporte8
-            // 
-            this.Reporte8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte8.BackgroundImage")));
-            this.Reporte8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Reporte8.Location = new System.Drawing.Point(685, 397);
-            this.Reporte8.Name = "Reporte8";
-            this.Reporte8.Size = new System.Drawing.Size(113, 120);
-            this.Reporte8.TabIndex = 7;
-            this.Reporte8.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("ROG Fonts", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(239, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(393, 56);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "!REPORTES¡";
             // 
             // label1
             // 
@@ -227,12 +157,13 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 24);
+            this.label6.Location = new System.Drawing.Point(33, 24);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(172, 32);
+            this.label6.Size = new System.Drawing.Size(140, 32);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Productos agrupados \r\npor color y precio promedio";
+            this.label6.Text = "Productos agrupados \r\npor color y precio\r\n";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -253,37 +184,6 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Informe de pruebas \r\nfuncionales";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("ROG Fonts", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(239, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(393, 56);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "!REPORTES¡";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WinAppArchivosGrupo1.Properties.Resources.logotienda;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WinAppArchivosGrupo1.Properties.Resources.logotienda;
-            this.pictureBox2.Location = new System.Drawing.Point(710, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(115, 74);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // label10
             // 
@@ -446,6 +346,108 @@
             this.groupBox9.TabIndex = 0;
             this.groupBox9.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WinAppArchivosGrupo1.Properties.Resources.logotienda;
+            this.pictureBox2.Location = new System.Drawing.Point(710, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(115, 74);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WinAppArchivosGrupo1.Properties.Resources.logotienda;
+            this.pictureBox1.Location = new System.Drawing.Point(44, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 74);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Reporte8
+            // 
+            this.Reporte8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte8.BackgroundImage")));
+            this.Reporte8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte8.Location = new System.Drawing.Point(685, 397);
+            this.Reporte8.Name = "Reporte8";
+            this.Reporte8.Size = new System.Drawing.Size(113, 120);
+            this.Reporte8.TabIndex = 7;
+            this.Reporte8.UseVisualStyleBackColor = true;
+            // 
+            // Reporte7
+            // 
+            this.Reporte7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte7.BackgroundImage")));
+            this.Reporte7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte7.Location = new System.Drawing.Point(481, 397);
+            this.Reporte7.Name = "Reporte7";
+            this.Reporte7.Size = new System.Drawing.Size(113, 120);
+            this.Reporte7.TabIndex = 6;
+            this.Reporte7.UseVisualStyleBackColor = true;
+            // 
+            // Reporte6
+            // 
+            this.Reporte6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte6.BackgroundImage")));
+            this.Reporte6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte6.Location = new System.Drawing.Point(274, 397);
+            this.Reporte6.Name = "Reporte6";
+            this.Reporte6.Size = new System.Drawing.Size(113, 120);
+            this.Reporte6.TabIndex = 5;
+            this.Reporte6.UseVisualStyleBackColor = true;
+            this.Reporte6.Click += new System.EventHandler(this.Reporte6_Click);
+            // 
+            // Reporte1
+            // 
+            this.Reporte1.BackColor = System.Drawing.Color.Transparent;
+            this.Reporte1.BackgroundImage = global::WinAppArchivosGrupo1.Properties.Resources.Reportes;
+            this.Reporte1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte1.Location = new System.Drawing.Point(73, 154);
+            this.Reporte1.Name = "Reporte1";
+            this.Reporte1.Size = new System.Drawing.Size(113, 120);
+            this.Reporte1.TabIndex = 0;
+            this.Reporte1.UseVisualStyleBackColor = false;
+            // 
+            // Reporte2
+            // 
+            this.Reporte2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte2.BackgroundImage")));
+            this.Reporte2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte2.Location = new System.Drawing.Point(274, 154);
+            this.Reporte2.Name = "Reporte2";
+            this.Reporte2.Size = new System.Drawing.Size(113, 120);
+            this.Reporte2.TabIndex = 1;
+            this.Reporte2.UseVisualStyleBackColor = true;
+            // 
+            // Reporte3
+            // 
+            this.Reporte3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte3.BackgroundImage")));
+            this.Reporte3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte3.Location = new System.Drawing.Point(481, 154);
+            this.Reporte3.Name = "Reporte3";
+            this.Reporte3.Size = new System.Drawing.Size(113, 120);
+            this.Reporte3.TabIndex = 2;
+            this.Reporte3.UseVisualStyleBackColor = true;
+            // 
+            // Reporte4
+            // 
+            this.Reporte4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte4.BackgroundImage")));
+            this.Reporte4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte4.Location = new System.Drawing.Point(685, 154);
+            this.Reporte4.Name = "Reporte4";
+            this.Reporte4.Size = new System.Drawing.Size(113, 120);
+            this.Reporte4.TabIndex = 3;
+            this.Reporte4.UseVisualStyleBackColor = true;
+            // 
+            // Reporte5
+            // 
+            this.Reporte5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte5.BackgroundImage")));
+            this.Reporte5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte5.Location = new System.Drawing.Point(73, 397);
+            this.Reporte5.Name = "Reporte5";
+            this.Reporte5.Size = new System.Drawing.Size(113, 120);
+            this.Reporte5.TabIndex = 4;
+            this.Reporte5.UseVisualStyleBackColor = true;
+            // 
             // FRNReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -480,8 +482,6 @@
             this.Text = "FRNReportes";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -498,6 +498,8 @@
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
