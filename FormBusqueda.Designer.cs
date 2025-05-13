@@ -279,6 +279,7 @@
             this.CB_tipo.Name = "CB_tipo";
             this.CB_tipo.Size = new System.Drawing.Size(178, 21);
             this.CB_tipo.TabIndex = 10;
+            this.CB_tipo.Visible = false;
             // 
             // FormBusqueda
             // 
