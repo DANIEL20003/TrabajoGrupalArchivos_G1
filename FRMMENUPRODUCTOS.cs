@@ -44,5 +44,11 @@ namespace WinAppArchivosGrupo1
             FRMELIMINAR objEliminar = new FRMELIMINAR();
             objEliminar.ShowDialog();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            FormBusqueda objBuscar=new FormBusqueda();
+            objBuscar.ShowDialog(); 
+        }
     }
 }
