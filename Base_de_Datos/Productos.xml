@@ -13,4 +13,30 @@
     <Unidad_Venta>Caja</Unidad_Venta>
     <Descripcion>esto es una prueba para ver si se crea una carpeta que contenga la base de datos para trabajar</Descripcion>
   </TBL_Productos>
+  <TBL_Productos>
+    <Codigo>1</Codigo>
+    <Tipo>Lápices</Tipo>
+    <Color>Rojo</Color>
+    <Precio>2</Precio>
+    <Volumen>Pequeño</Volumen>
+    <Marca>Bic</Marca>
+    <Proveedor>3</Proveedor>
+    <Material>Madera</Material>
+    <Stock>4</Stock>
+    <Unidad_Venta>Unidad</Unidad_Venta>
+    <Descripcion>fdljsjl</Descripcion>
+  </TBL_Productos>
+  <TBL_Productos>
+    <Codigo>2</Codigo>
+    <Tipo>Lápices</Tipo>
+    <Color>Rojo</Color>
+    <Precio>6</Precio>
+    <Volumen>Mediano</Volumen>
+    <Marca>Faber-Castell</Marca>
+    <Proveedor>a</Proveedor>
+    <Material>Metal</Material>
+    <Stock>7</Stock>
+    <Unidad_Venta>Unidad</Unidad_Venta>
+    <Descripcion>23</Descripcion>
+  </TBL_Productos>
 </DataSet1>

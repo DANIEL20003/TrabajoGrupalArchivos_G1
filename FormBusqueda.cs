@@ -13,11 +13,17 @@ namespace WinAppArchivosGrupo1
 {
     public partial class FormBusqueda : Form
     {
-        string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Productos.xml");
+        string rutaArchivo;
+
+
 
         public FormBusqueda()
         {
             InitializeComponent();
+            //string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Productos.xml");
+            string rutaProyecto = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent?.Parent?.FullName;
+            string rutaResources = Path.Combine(rutaProyecto, "Base_de_Datos");
+            rutaArchivo = Path.Combine(rutaResources, "Productos.xml");
 
             // Estado inicial: búsqueda por código
             RB_codigo.Checked = true;
