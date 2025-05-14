@@ -228,6 +228,7 @@
             this.Reporte8.Size = new System.Drawing.Size(85, 98);
             this.Reporte8.TabIndex = 7;
             this.Reporte8.UseVisualStyleBackColor = true;
+            this.Reporte8.Click += new System.EventHandler(this.Reporte8_Click);
             // 
             // label1
             // 
@@ -314,12 +315,12 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 14);
+            this.label8.Location = new System.Drawing.Point(1, 20);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 26);
+            this.label8.Size = new System.Drawing.Size(116, 26);
             this.label8.TabIndex = 15;
-            this.label8.Text = "Informe de pruebas \r\nfuncionales";
+            this.label8.Text = "Preferencia de Unidad \r\nde Venta por Marca";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label10

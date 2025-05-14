@@ -150,6 +150,12 @@
     <Compile Include="FRMReporte7.Designer.cs">
       <DependentUpon>FRMReporte7.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMreporte8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMreporte8.Designer.cs">
+      <DependentUpon>FRMreporte8.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRNreporte6.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,9 @@
     <EmbeddedResource Include="FRMReporte7.resx">
       <DependentUpon>FRMReporte7.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMreporte8.resx">
+      <DependentUpon>FRMreporte8.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRNreporte6.resx">
       <DependentUpon>FRNreporte6.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +241,7 @@
     <EmbeddedResource Include="Reporte4.rdlc" />
     <EmbeddedResource Include="Reporte5.rdlc" />
     <EmbeddedResource Include="Reporte6.rdlc" />
+    <EmbeddedResource Include="Reporte8.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
