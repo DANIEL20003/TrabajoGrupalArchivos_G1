@@ -105,11 +105,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::WinAppArchivosGrupo1.Properties.Resources.retroceder;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 12);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 60);
+            this.pictureBox1.Size = new System.Drawing.Size(69, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -118,14 +119,14 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Viner Hand ITC", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(179, 7);
+            this.label9.Location = new System.Drawing.Point(242, 12);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(258, 44);
+            this.label9.Size = new System.Drawing.Size(170, 60);
             this.label9.TabIndex = 0;
-            this.label9.Text = "!REPORTES¡";
+            this.label9.Text = "Reportes";
             // 
             // Reporte1
             // 
@@ -542,7 +543,7 @@
             this.Controls.Add(this.groupBox3);
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "FRNReportes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRNReportes";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -63,7 +63,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Plum;
+            this.panel1.BackColor = System.Drawing.Color.Thistle;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -74,9 +74,10 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::WinAppArchivosGrupo1.Properties.Resources.retroceder1;
             this.pictureBox1.Location = new System.Drawing.Point(9, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -87,17 +88,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Viner Hand ITC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(172, 12);
+            this.label1.Font = new System.Drawing.Font("Viner Hand ITC", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(217, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(463, 78);
+            this.label1.Size = new System.Drawing.Size(362, 60);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ingreso de Producto";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Plum;
+            this.panel2.BackColor = System.Drawing.Color.Thistle;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 390);
             this.panel2.Name = "panel2";
@@ -268,11 +269,11 @@
             // 
             // BTN_Ingresar
             // 
-            this.BTN_Ingresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BTN_Ingresar.BackColor = System.Drawing.Color.Pink;
             this.BTN_Ingresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN_Ingresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Ingresar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Ingresar.ForeColor = System.Drawing.Color.White;
+            this.BTN_Ingresar.ForeColor = System.Drawing.Color.Black;
             this.BTN_Ingresar.Location = new System.Drawing.Point(650, 333);
             this.BTN_Ingresar.Name = "BTN_Ingresar";
             this.BTN_Ingresar.Size = new System.Drawing.Size(128, 35);
@@ -428,8 +429,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "FRMINGRESOPRODUCTO";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMINGRESOPRODUCTO";
             this.Load += new System.EventHandler(this.FRMINGRESOPRODUCTO_Load);
             this.panel1.ResumeLayout(false);

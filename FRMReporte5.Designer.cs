@@ -68,7 +68,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FRMReporte5";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMReporte5";
             this.Load += new System.EventHandler(this.FRMReporte5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tBLProductosBindingSource)).EndInit();

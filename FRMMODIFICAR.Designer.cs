@@ -104,7 +104,7 @@ namespace WinAppArchivosGrupo1
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Location = new System.Drawing.Point(16, 170);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(980, 239);
             this.panel2.TabIndex = 84;
@@ -112,99 +112,110 @@ namespace WinAppArchivosGrupo1
             // 
             // lblUnidadVenta
             // 
+            this.lblUnidadVenta.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnidadVenta.Location = new System.Drawing.Point(742, 75);
-            this.lblUnidadVenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblUnidadVenta.Margin = new System.Windows.Forms.Padding(2);
             this.lblUnidadVenta.Name = "lblUnidadVenta";
-            this.lblUnidadVenta.Size = new System.Drawing.Size(145, 20);
+            this.lblUnidadVenta.Size = new System.Drawing.Size(145, 26);
             this.lblUnidadVenta.TabIndex = 139;
             // 
             // lblStock
             // 
+            this.lblStock.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStock.Location = new System.Drawing.Point(700, 37);
-            this.lblStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblStock.Margin = new System.Windows.Forms.Padding(2);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(145, 20);
+            this.lblStock.Size = new System.Drawing.Size(145, 26);
             this.lblStock.TabIndex = 138;
             // 
             // lblMaterial
             // 
+            this.lblMaterial.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaterial.Location = new System.Drawing.Point(425, 155);
-            this.lblMaterial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblMaterial.Margin = new System.Windows.Forms.Padding(2);
             this.lblMaterial.Name = "lblMaterial";
-            this.lblMaterial.Size = new System.Drawing.Size(145, 20);
+            this.lblMaterial.Size = new System.Drawing.Size(145, 26);
             this.lblMaterial.TabIndex = 137;
             // 
             // lblProveedor
             // 
+            this.lblProveedor.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProveedor.Location = new System.Drawing.Point(425, 114);
-            this.lblProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblProveedor.Margin = new System.Windows.Forms.Padding(2);
             this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(145, 20);
+            this.lblProveedor.Size = new System.Drawing.Size(145, 26);
             this.lblProveedor.TabIndex = 136;
             // 
             // lblMarca
             // 
-            this.lblMarca.Location = new System.Drawing.Point(420, 76);
-            this.lblMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblMarca.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Location = new System.Drawing.Point(425, 73);
+            this.lblMarca.Margin = new System.Windows.Forms.Padding(2);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(145, 20);
+            this.lblMarca.Size = new System.Drawing.Size(145, 26);
             this.lblMarca.TabIndex = 135;
             // 
             // lblVolumen
             // 
-            this.lblVolumen.Location = new System.Drawing.Point(420, 38);
-            this.lblVolumen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblVolumen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVolumen.Location = new System.Drawing.Point(425, 35);
+            this.lblVolumen.Margin = new System.Windows.Forms.Padding(2);
             this.lblVolumen.Name = "lblVolumen";
-            this.lblVolumen.Size = new System.Drawing.Size(145, 20);
+            this.lblVolumen.Size = new System.Drawing.Size(145, 26);
             this.lblVolumen.TabIndex = 134;
             // 
             // lblDescripcion
             // 
-            this.lblDescripcion.Location = new System.Drawing.Point(161, 209);
-            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblDescripcion.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(152, 206);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(145, 20);
+            this.lblDescripcion.Size = new System.Drawing.Size(418, 22);
             this.lblDescripcion.TabIndex = 133;
             // 
             // lblPrecio
             // 
+            this.lblPrecio.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.Location = new System.Drawing.Point(111, 165);
-            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(145, 20);
+            this.lblPrecio.Size = new System.Drawing.Size(145, 22);
             this.lblPrecio.TabIndex = 132;
             // 
             // lblColor
             // 
+            this.lblColor.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblColor.Location = new System.Drawing.Point(111, 124);
-            this.lblColor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblColor.Margin = new System.Windows.Forms.Padding(2);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(145, 20);
+            this.lblColor.Size = new System.Drawing.Size(145, 22);
             this.lblColor.TabIndex = 131;
             // 
             // lblTipo
             // 
-            this.lblTipo.Location = new System.Drawing.Point(111, 70);
-            this.lblTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblTipo.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Location = new System.Drawing.Point(111, 76);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(2);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(145, 20);
+            this.lblTipo.Size = new System.Drawing.Size(145, 22);
             this.lblTipo.TabIndex = 130;
             // 
             // lblCodigo
             // 
+            this.lblCodigo.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.Location = new System.Drawing.Point(111, 38);
-            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(145, 20);
+            this.lblCodigo.Size = new System.Drawing.Size(145, 22);
             this.lblCodigo.TabIndex = 129;
             // 
             // btnCancelar
             // 
             this.btnCancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnCancelar.BackColor = System.Drawing.Color.Bisque;
+            this.btnCancelar.BackColor = System.Drawing.Color.Pink;
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(811, 196);
+            this.btnCancelar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(756, 145);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(106, 40);
             this.btnCancelar.TabIndex = 121;
@@ -256,7 +267,7 @@ namespace WinAppArchivosGrupo1
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(25, 201);
+            this.label12.Location = new System.Drawing.Point(17, 202);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(130, 25);
             this.label12.TabIndex = 112;
@@ -285,10 +296,10 @@ namespace WinAppArchivosGrupo1
             // btnGuardar
             // 
             this.btnGuardar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnGuardar.BackColor = System.Drawing.Color.Bisque;
+            this.btnGuardar.BackColor = System.Drawing.Color.Pink;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(700, 195);
+            this.btnGuardar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(631, 144);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(106, 40);
             this.btnGuardar.TabIndex = 104;
@@ -320,7 +331,7 @@ namespace WinAppArchivosGrupo1
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(25, 159);
+            this.label6.Location = new System.Drawing.Point(17, 157);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 25);
             this.label6.TabIndex = 107;
@@ -372,9 +383,9 @@ namespace WinAppArchivosGrupo1
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(269, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(296, 23);
+            this.label3.Size = new System.Drawing.Size(350, 23);
             this.label3.TabIndex = 81;
-            this.label3.Text = "Ingrese el código de Utiles escolar";
+            this.label3.Text = "Ingrese el código del útil escolar a editar";
             // 
             // panel1
             // 
@@ -392,11 +403,12 @@ namespace WinAppArchivosGrupo1
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::WinAppArchivosGrupo1.Properties.Resources.retroceder;
             this.pictureBox8.Location = new System.Drawing.Point(2, 3);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox8.Size = new System.Drawing.Size(76, 32);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 33;
             this.pictureBox8.TabStop = false;
@@ -443,9 +455,10 @@ namespace WinAppArchivosGrupo1
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.Image = global::WinAppArchivosGrupo1.Properties.Resources.buscar;
             this.btnBuscar.Location = new System.Drawing.Point(465, 128);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(52, 26);
             this.btnBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -469,9 +482,9 @@ namespace WinAppArchivosGrupo1
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtCod);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FRMMODIFICAR";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMMODIFICAR";
             this.Load += new System.EventHandler(this.FRMMODIFICAR_Load);
             this.panel2.ResumeLayout(false);

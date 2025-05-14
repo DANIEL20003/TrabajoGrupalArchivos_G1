@@ -73,7 +73,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Plum;
+            this.panel2.BackColor = System.Drawing.Color.Pink;
             this.panel2.Location = new System.Drawing.Point(132, 363);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 10);
@@ -81,7 +81,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Plum;
+            this.panel3.BackColor = System.Drawing.Color.Pink;
             this.panel3.Location = new System.Drawing.Point(391, 363);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 10);
@@ -89,7 +89,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Plum;
+            this.panel4.BackColor = System.Drawing.Color.Pink;
             this.panel4.Location = new System.Drawing.Point(651, 363);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 10);
@@ -168,6 +168,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::WinAppArchivosGrupo1.Properties.Resources.Acerca_de;
             this.pictureBox4.Location = new System.Drawing.Point(695, 251);
             this.pictureBox4.Name = "pictureBox4";
@@ -179,6 +180,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::WinAppArchivosGrupo1.Properties.Resources.Reportes;
             this.pictureBox3.Location = new System.Drawing.Point(434, 251);
             this.pictureBox3.Name = "pictureBox3";
@@ -190,6 +192,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::WinAppArchivosGrupo1.Properties.Resources.Productos;
             this.pictureBox2.Location = new System.Drawing.Point(179, 251);
             this.pictureBox2.Name = "pictureBox2";
