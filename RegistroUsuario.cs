@@ -18,6 +18,10 @@ namespace WinAppArchivosGrupo1
         int edadEnAnios;
         DateTime fechaNac;
 
+        private List<Usuario> listaUsuarios = new List<Usuario>();
+
+
+
         public RegistroUsuario()
         {
             InitializeComponent();
@@ -32,11 +36,7 @@ namespace WinAppArchivosGrupo1
             }
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            LeerFechaNac();
-            comboBox1.Focus();
-        }
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -77,80 +77,114 @@ namespace WinAppArchivosGrupo1
             if (radioButton4.Checked) genero = 'M';
         }
 
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                textBox3.Focus();
+                e.Handled = true; 
+            }
+        }
+
+        private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                textBox4.Focus();
+                e.Handled = true;
+            }
+        }
+
+        private void TXB_registroU_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                TXB_crearC.Focus();
+                e.Handled = true;
+            }
+
+        }
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton3.Checked) genero = 'F';
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-        }
+
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             try
             {
-                string ruta = AppDomain.CurrentDomain.BaseDirectory;
-
                 
-                object[] vect = new object[11];
+                string usuarioNombre = TXB_registroU.Text.Trim();  
+                string contraseña = TXB_crearC.Text.Trim();       
+                string nombre = textBox2.Text.Trim();               
+                string apellido = textBox3.Text.Trim();            
+                string ciudad = comboBox1.SelectedItem.ToString(); 
+                string email = textBox4.Text.Trim();                
+                string direccion = textBox5.Text.Trim();            
+                DateTime fechaNac = dateTimePicker1.Value.Date;     
+
+                if (string.IsNullOrEmpty(usuarioNombre) || string.IsNullOrEmpty(contraseña))
+                {
+                    MessageBox.Show("Por favor, complete todos los campos.");
+                    return;
+                }
+
+         
+                foreach (var usuario in listaUsuarios)
+                {
+                    if (usuario.UsuarioNombre == usuarioNombre)
+                    {
+                        MessageBox.Show("El usuario ya está registrado.");
+                        return;
+                    }
+                }
 
                 LeerCedula();
-                nombre = textBox2.Text.Trim();
-                apellido = textBox3.Text.Trim();
-                ciudad = comboBox1.SelectedItem.ToString();
-                email = textBox4.Text.Trim();
-                direccion = textBox5.Text.Trim();
-                LeerFechaNac();
 
-                DataRow[] datos;
-             
-               
+                int edadEnAnios = calcularEdad(fechaNac);
+                if (edadEnAnios < 18)
+                {
+                    MessageBox.Show("Debe ser mayor de edad para registrarse.");
+                    return;
+                }
+
+         
+                Usuario nuevoUsuario = new Usuario(usuarioNombre, contraseña);
+
+              
+                listaUsuarios.Add(nuevoUsuario);
+
+              
+                MessageBox.Show("Usuario creado exitosamente.");
+
+                TXB_registroU.Clear();
+                TXB_crearC.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+
+                this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Todos los campos deben ser válidos y llenados.");
+                MessageBox.Show("Error al registrar el usuario: " + ex.Message);
                 Console.WriteLine("---RegistroUsuario---" + ex.Message);
             }
         }
 
-        private void RegistroUsuario_Load(object sender, EventArgs e)
+
+        private int calcularEdad(DateTime fechaNac)
         {
+            DateTime fechaActual = DateTime.Today;
+            TimeSpan diferencia = fechaActual - fechaNac;
+            return (int)(diferencia.TotalDays / 365.25);
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.Cancel;
-        }
-
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                nombre = textBox2.Text.Trim();
-                textBox3.Focus();
-            }
-        }
-
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                LeerCedula();
-            }
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+       
         void LeerCedula()
         {
             try
@@ -158,8 +192,9 @@ namespace WinAppArchivosGrupo1
                 Cedula comprCedula = new Cedula(textBox1.Text);
                 if (textBox1.Text.Length > 10)
                 {
-                    throw new Exception("Rata");
+                    throw new Exception("La cédula no es válida.");
                 }
+
                 if (!comprCedula.ComprobarCedula())
                 {
                     MessageBox.Show("Cédula inválida.");
@@ -168,8 +203,9 @@ namespace WinAppArchivosGrupo1
                 }
                 else
                 {
-                    cedula = textBox1.Text.Trim();
-                    textBox2.Focus();
+                    // Almacenar la cédula si es válida
+                    string cedula = textBox1.Text.Trim();
+                    textBox2.Focus();  // Mover el foco al siguiente campo
                 }
             }
             catch (Exception ex)
@@ -179,13 +215,17 @@ namespace WinAppArchivosGrupo1
             }
         }
 
-        void LeerFechaNac()
+        private void btn_Cancelar_Click(object sender, EventArgs e)
         {
-            fechaNac = dateTimePicker1.Value.Date;
-            DateTime fechaActual = DateTime.Today;
-            TimeSpan diferencia = fechaActual - fechaNac;
+            this.DialogResult = DialogResult.Cancel;
+        }
 
-            edadEnAnios = (int)(diferencia.TotalDays / 365.25);
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                LeerCedula();
+            }
         }
     }
 }

@@ -38,6 +38,29 @@ namespace WinAppArchivosGrupo1
         {
             if (e.KeyChar == (Char)Keys.Enter)
             {
+                if (string.IsNullOrWhiteSpace(textBox1.Text))
+                {
+                    MessageBox.Show("El campo de usuario no puede estar vacío.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox1.Focus();
+                    e.Handled = true;
+                    return;
+                }
+
+                
+                string[] usuariosPermitidos = {
+                    usuario1, usuario2, usuario3, usuario4, usuario5,
+                    usuario6, usuario7, usuario8, usuario9
+                };
+
+                if (!usuariosPermitidos.Contains(textBox1.Text))
+                {
+                    MessageBox.Show("Usuario no permitido.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox1.Clear();
+                    textBox1.Focus();
+                    e.Handled = true;
+                    return;
+                }
+
                 textBox2.Focus();
             }
         }
@@ -82,10 +105,7 @@ namespace WinAppArchivosGrupo1
 
         private void FRMLOGIN_Load(object sender, EventArgs e)
         {
-            /*
-           // bypass para no estar ingresando usuario y contrasenia durante las pruebas
-           Pagina_principal objetopin = new Pagina_principal();
-           objetopin.ShowDialog();*/
+          
 
            
 
@@ -113,8 +133,8 @@ namespace WinAppArchivosGrupo1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
+          
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -122,6 +142,12 @@ namespace WinAppArchivosGrupo1
             {
                 btnregistrar.PerformClick();
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            RegistroUsuario llmarform = new RegistroUsuario();
+            llmarform.ShowDialog();
         }
     }
     }

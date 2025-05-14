@@ -48,6 +48,7 @@ namespace WinAppArchivosGrupo1
             {
                 MessageBox.Show("El archivo Productos.xml no se encontró.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            this.reportViewer2.RefreshReport();
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)

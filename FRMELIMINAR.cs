@@ -49,23 +49,17 @@ namespace WinAppArchivosGrupo1
                     lblStock.Text = Vector[0]["Stock"].ToString();
                     lblUnidadVenta.Text = Vector[0]["Unidad_Venta"].ToString();
                     lblDescripcion.Text = Vector[0]["Descripcion"].ToString();
-
                 }
                 else
                 {
-                    MessageBox.Show("No existen registros asociados", "No se encontró", 
+                    MessageBox.Show("No existen registros asociados", "No se encontró",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error del tipo: {ex.Message}", "Se presentó un error",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtCod.Clear();
-                txtCod.Focus();
+                MessageBox.Show("Error al buscar: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
         }
 
         private void txtCod_KeyPress(object sender, KeyPressEventArgs e)
@@ -73,31 +67,42 @@ namespace WinAppArchivosGrupo1
             if (e.KeyChar == (char)Keys.Enter)
             {
                 btnBuscar_Click(sender, e);
-
             }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Se canceló la eliminación", "Operación Cancelada", 
+            MessageBox.Show("Se canceló la eliminación", "Operación Cancelada",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            Vector[0].Delete();
-            string rutaProyecto = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
-            string rutaResources = Path.Combine(rutaProyecto, "Base_de_Datos");
-            string rutaArchivo = Path.Combine(rutaResources, "Productos.xml");
-            dataSet11.WriteXml(rutaArchivo);
-            MessageBox.Show("Se ha eliminado exitosamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Close();
+            if (Vector != null && Vector.Length > 0)
+            {
+                Vector[0].Delete();
+                string rutaProyecto = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+                string rutaResources = Path.Combine(rutaProyecto, "Base_de_Datos");
+                string rutaArchivo = Path.Combine(rutaResources, "Productos.xml");
+                dataSet11.WriteXml(rutaArchivo);
+                MessageBox.Show("Se ha eliminado exitosamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("No hay registro seleccionado para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

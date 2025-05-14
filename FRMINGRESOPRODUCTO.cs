@@ -134,6 +134,11 @@ namespace WinAppArchivosGrupo1
             }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void BTN_Ingresar_Click(object sender, EventArgs e)
         {
             // Validar que todos los campos obligatorios estén completos

@@ -116,6 +116,12 @@
     <Compile Include="FRMMODIFICAR.Designer.cs">
       <DependentUpon>FRMMODIFICAR.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMReporte3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMReporte3.Designer.cs">
+      <DependentUpon>FRMReporte3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRNreporte6.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,7 @@
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +165,9 @@
     <EmbeddedResource Include="FRMMODIFICAR.resx">
       <DependentUpon>FRMMODIFICAR.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMReporte3.resx">
+      <DependentUpon>FRMReporte3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRNreporte6.resx">
       <DependentUpon>FRNreporte6.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +187,7 @@
     <EmbeddedResource Include="RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte3.rdlc" />
     <EmbeddedResource Include="Reporte6.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -270,6 +281,7 @@
     <None Include="Resources\buscar.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\retroceder1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll" />
     <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll" />

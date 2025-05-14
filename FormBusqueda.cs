@@ -151,5 +151,10 @@ namespace WinAppArchivosGrupo1
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
