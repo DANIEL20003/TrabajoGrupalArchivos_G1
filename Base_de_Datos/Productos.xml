@@ -65,4 +65,18 @@
     <Unidad_Venta>Docena</Unidad_Venta>
     <Descripcion>prueba 4</Descripcion>
   </TBL_Productos>
+  <TBL_Productos>
+    <Codigo>1357</Codigo>
+    <Tipo>Sacapuntas</Tipo>
+    <Color>Negro</Color>
+    <Precio>65</Precio>
+    <Volumen>Grande</Volumen>
+    <Marca>Milan</Marca>
+    <Proveedor>holas</Proveedor>
+    <Material>Goma</Material>
+    <Stock>45</Stock>
+    <Unidad_Venta>Paquete</Unidad_Venta>
+    <Descripcion>una prueba para los reportes
+</Descripcion>
+  </TBL_Productos>
 </DataSet1>
