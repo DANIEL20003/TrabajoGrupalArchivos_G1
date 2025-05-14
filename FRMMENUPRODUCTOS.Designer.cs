@@ -284,6 +284,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FRMMENUPRODUCTOS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FRMMENUPRODUCTOS";
             this.Load += new System.EventHandler(this.FRMMENUPRODUCTOS_Load);
             this.panel6.ResumeLayout(false);
