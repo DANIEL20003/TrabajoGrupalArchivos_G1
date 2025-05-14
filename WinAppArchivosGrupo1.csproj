@@ -138,6 +138,12 @@
     <Compile Include="FRMReporte5.Designer.cs">
       <DependentUpon>FRMReporte5.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMReporte7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMReporte7.Designer.cs">
+      <DependentUpon>FRMReporte7.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRNreporte6.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     <EmbeddedResource Include="FRMReporte5.resx">
       <DependentUpon>FRMReporte5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMReporte7.resx">
+      <DependentUpon>FRMReporte7.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRNreporte6.resx">
       <DependentUpon>FRNreporte6.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +217,7 @@
     <EmbeddedResource Include="RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report7.rdlc" />
     <EmbeddedResource Include="Reporte2.rdlc" />
     <EmbeddedResource Include="Reporte3.rdlc" />
     <EmbeddedResource Include="Reporte5.rdlc" />
