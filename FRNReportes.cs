@@ -53,5 +53,11 @@ namespace WinAppArchivosGrupo1
         {
 
         }
+
+        private void Reporte5_Click(object sender, EventArgs e)
+        {
+            FRMReporte5 fRMReporte5 = new FRMReporte5();
+            fRMReporte5.ShowDialog();
+        }
     }
 }

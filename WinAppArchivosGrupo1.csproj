@@ -122,13 +122,19 @@
     <Compile Include="FRMReporte2.Designer.cs">
       <DependentUpon>FRMReporte2.cs</DependentUpon>
     </Compile>
-	  <Compile Include="FRMReporte3.cs">
-		  <SubType>Form</SubType>
-	  </Compile>
-	  <Compile Include="FRMReporte3.Designer.cs">
-		  <DependentUpon>FRMReporte3.cs</DependentUpon>
-	  </Compile>
-	  <Compile Include="FRNreporte6.cs">
+    <Compile Include="FRMReporte3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMReporte3.Designer.cs">
+      <DependentUpon>FRMReporte3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMReporte5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMReporte5.Designer.cs">
+      <DependentUpon>FRMReporte5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRNreporte6.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRNreporte6.Designer.cs">
@@ -174,6 +180,9 @@
     <EmbeddedResource Include="FRMReporte3.resx">
       <DependentUpon>FRMReporte3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMReporte5.resx">
+      <DependentUpon>FRMReporte5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRNreporte6.resx">
       <DependentUpon>FRNreporte6.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +203,7 @@
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte3.rdlc" />
+    <EmbeddedResource Include="Reporte5.rdlc" />
     <EmbeddedResource Include="Reporte6.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
