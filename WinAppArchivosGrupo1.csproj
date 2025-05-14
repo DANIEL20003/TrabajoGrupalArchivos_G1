@@ -116,6 +116,12 @@
     <Compile Include="FRMMODIFICAR.Designer.cs">
       <DependentUpon>FRMMODIFICAR.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMReporte2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMReporte2.Designer.cs">
+      <DependentUpon>FRMReporte2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRNreporte6.cs">
       <SubType>Form</SubType>
     </Compile>
