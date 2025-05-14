@@ -132,6 +132,12 @@
     <Compile Include="FRMReporte3.Designer.cs">
       <DependentUpon>FRMReporte3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMReporte4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMReporte4.Designer.cs">
+      <DependentUpon>FRMReporte4.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMReporte5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     <EmbeddedResource Include="FRMReporte3.resx">
       <DependentUpon>FRMReporte3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMReporte4.resx">
+      <DependentUpon>FRMReporte4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMReporte5.resx">
       <DependentUpon>FRMReporte5.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +229,7 @@
     <EmbeddedResource Include="Report7.rdlc" />
     <EmbeddedResource Include="Reporte2.rdlc" />
     <EmbeddedResource Include="Reporte3.rdlc" />
+    <EmbeddedResource Include="Reporte4.rdlc" />
     <EmbeddedResource Include="Reporte5.rdlc" />
     <EmbeddedResource Include="Reporte6.rdlc" />
     <None Include="DataSet1.xsc">
