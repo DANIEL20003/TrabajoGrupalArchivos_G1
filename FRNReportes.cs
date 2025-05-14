@@ -71,5 +71,11 @@ namespace WinAppArchivosGrupo1
             FRMReporte7 fRMReporte7 = new FRMReporte7();
             fRMReporte7.ShowDialog();
         }
+
+        private void Reporte4_Click(object sender, EventArgs e)
+        {
+            FRMReporte4 fRMReporte4 = new FRMReporte4();
+            fRMReporte4.ShowDialog();
+        }
     }
 }
