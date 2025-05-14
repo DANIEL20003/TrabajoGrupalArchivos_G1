@@ -75,6 +75,7 @@
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -244,12 +245,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 10);
+            this.label2.Location = new System.Drawing.Point(4, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 26);
+            this.label2.Size = new System.Drawing.Size(125, 26);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Productos ingresados \r\nen la última semana";
+            this.label2.Text = "Productos por Proveedor\r\nMaterial y Marca";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -257,19 +258,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Linen;
-            this.label3.Location = new System.Drawing.Point(345, 225);
+            this.label3.Location = new System.Drawing.Point(-10, 14);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 26);
+            this.label3.Size = new System.Drawing.Size(138, 26);
             this.label3.TabIndex = 10;
-            this.label3.Text = " Productos por Descripción, \r\n          Tipo, Precio;";
+            this.label3.Text = "Productos por Descripción, \r\nTipo, Precio;";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 14);
+            this.label4.Location = new System.Drawing.Point(22, 14);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 26);
@@ -474,7 +475,7 @@
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Linen;
             this.groupBox7.Controls.Add(this.label4);
-            this.groupBox7.Location = new System.Drawing.Point(502, 214);
+            this.groupBox7.Location = new System.Drawing.Point(508, 214);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -486,17 +487,18 @@
             // 
             this.groupBox8.BackColor = System.Drawing.Color.Linen;
             this.groupBox8.Controls.Add(this.label2);
-            this.groupBox8.Location = new System.Drawing.Point(190, 214);
+            this.groupBox8.Location = new System.Drawing.Point(180, 214);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox8.Size = new System.Drawing.Size(112, 49);
+            this.groupBox8.Size = new System.Drawing.Size(132, 49);
             this.groupBox8.TabIndex = 0;
             this.groupBox8.TabStop = false;
             // 
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.Linen;
+            this.groupBox9.Controls.Add(this.label3);
             this.groupBox9.Location = new System.Drawing.Point(347, 214);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox9.Name = "groupBox9";
@@ -510,7 +512,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 487);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -558,6 +559,8 @@
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
