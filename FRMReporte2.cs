@@ -16,5 +16,11 @@ namespace WinAppArchivosGrupo1
         {
             InitializeComponent();
         }
+
+        private void FRMReporte2_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

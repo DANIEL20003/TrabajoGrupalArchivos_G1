@@ -131,6 +131,7 @@
             this.Reporte1.BackColor = System.Drawing.Color.Transparent;
             this.Reporte1.BackgroundImage = global::WinAppArchivosGrupo1.Properties.Resources.Reportes;
             this.Reporte1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reporte1.Location = new System.Drawing.Point(55, 125);
             this.Reporte1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Reporte1.Name = "Reporte1";
@@ -142,17 +143,20 @@
             // 
             this.Reporte2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte2.BackgroundImage")));
             this.Reporte2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reporte2.Location = new System.Drawing.Point(205, 125);
             this.Reporte2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Reporte2.Name = "Reporte2";
             this.Reporte2.Size = new System.Drawing.Size(85, 98);
             this.Reporte2.TabIndex = 1;
             this.Reporte2.UseVisualStyleBackColor = true;
+            this.Reporte2.Click += new System.EventHandler(this.Reporte2_Click);
             // 
             // Reporte3
             // 
             this.Reporte3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte3.BackgroundImage")));
             this.Reporte3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reporte3.Location = new System.Drawing.Point(361, 125);
             this.Reporte3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Reporte3.Name = "Reporte3";
@@ -165,6 +169,7 @@
             // 
             this.Reporte4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte4.BackgroundImage")));
             this.Reporte4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reporte4.Location = new System.Drawing.Point(514, 125);
             this.Reporte4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Reporte4.Name = "Reporte4";
@@ -176,6 +181,7 @@
             // 
             this.Reporte5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte5.BackgroundImage")));
             this.Reporte5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reporte5.Location = new System.Drawing.Point(55, 322);
             this.Reporte5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Reporte5.Name = "Reporte5";
@@ -188,6 +194,7 @@
             // 
             this.Reporte6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte6.BackgroundImage")));
             this.Reporte6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reporte6.Location = new System.Drawing.Point(205, 322);
             this.Reporte6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Reporte6.Name = "Reporte6";
@@ -200,6 +207,7 @@
             // 
             this.Reporte7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte7.BackgroundImage")));
             this.Reporte7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reporte7.Location = new System.Drawing.Point(361, 322);
             this.Reporte7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Reporte7.Name = "Reporte7";
@@ -211,6 +219,7 @@
             // 
             this.Reporte8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reporte8.BackgroundImage")));
             this.Reporte8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reporte8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reporte8.Location = new System.Drawing.Point(514, 322);
             this.Reporte8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Reporte8.Name = "Reporte8";
