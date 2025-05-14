@@ -246,6 +246,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Reporte1.0.rdlc" />
     <EmbeddedResource Include="Reporte2.rdlc" />
     <EmbeddedResource Include="Reporte3.rdlc" />
     <EmbeddedResource Include="Reporte4.rdlc" />

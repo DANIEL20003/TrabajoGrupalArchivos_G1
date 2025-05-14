@@ -261,7 +261,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Linen;
-            this.label3.Location = new System.Drawing.Point(-10, 14);
+            this.label3.Location = new System.Drawing.Point(-3, 14);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 26);
@@ -273,23 +273,23 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 14);
+            this.label4.Location = new System.Drawing.Point(9, 14);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 26);
+            this.label4.Size = new System.Drawing.Size(85, 26);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Productos \r\neliminados";
+            this.label4.Text = "Productos \r\npor color y stock";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 20);
+            this.label5.Location = new System.Drawing.Point(-1, 20);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 26);
+            this.label5.Size = new System.Drawing.Size(115, 26);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Resultados \r\nmás buscados";
+            this.label5.Text = "Productos de acuerdo \r\nal volumen y su precio";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label6
@@ -306,7 +306,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 20);
+            this.label7.Location = new System.Drawing.Point(4, 20);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(125, 26);
@@ -466,11 +466,11 @@
             // 
             this.groupBox6.BackColor = System.Drawing.Color.Linen;
             this.groupBox6.Controls.Add(this.label5);
-            this.groupBox6.Location = new System.Drawing.Point(47, 408);
+            this.groupBox6.Location = new System.Drawing.Point(41, 408);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox6.Size = new System.Drawing.Size(101, 57);
+            this.groupBox6.Size = new System.Drawing.Size(115, 57);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             // 
