@@ -139,6 +139,7 @@
             this.Reporte1.Size = new System.Drawing.Size(85, 98);
             this.Reporte1.TabIndex = 0;
             this.Reporte1.UseVisualStyleBackColor = false;
+            this.Reporte1.Click += new System.EventHandler(this.Reporte1_Click);
             // 
             // Reporte2
             // 
@@ -177,6 +178,7 @@
             this.Reporte4.Size = new System.Drawing.Size(85, 98);
             this.Reporte4.TabIndex = 3;
             this.Reporte4.UseVisualStyleBackColor = true;
+            this.Reporte4.Click += new System.EventHandler(this.Reporte4_Click_1);
             // 
             // Reporte5
             // 

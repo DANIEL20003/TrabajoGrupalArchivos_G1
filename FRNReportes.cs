@@ -83,5 +83,17 @@ namespace WinAppArchivosGrupo1
             FRMreporte8 objReporte8 = new FRMreporte8();
             objReporte8.ShowDialog();
         }
+
+        private void Reporte1_Click(object sender, EventArgs e)
+        {
+            FRMReporte1 objReporte1 = new FRMReporte1();
+            objReporte1.ShowDialog();
+        }
+
+        private void Reporte4_Click_1(object sender, EventArgs e)
+        {
+            FRMReporte4 objReporte4 = new FRMReporte4();
+            objReporte4.ShowDialog();
+        }
     }
 }

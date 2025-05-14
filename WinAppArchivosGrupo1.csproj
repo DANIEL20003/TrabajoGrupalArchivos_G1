@@ -120,6 +120,12 @@
     <Compile Include="FRMMODIFICAR.Designer.cs">
       <DependentUpon>FRMMODIFICAR.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMReporte1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMReporte1.Designer.cs">
+      <DependentUpon>FRMReporte1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMReporte2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     <EmbeddedResource Include="FRMMODIFICAR.resx">
       <DependentUpon>FRMMODIFICAR.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMReporte1.resx">
+      <DependentUpon>FRMReporte1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMReporte2.resx">
       <DependentUpon>FRMReporte2.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +244,7 @@
     <EmbeddedResource Include="RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report7.rdlc" />
     <EmbeddedResource Include="Reporte2.rdlc" />
     <EmbeddedResource Include="Reporte3.rdlc" />
