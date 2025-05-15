@@ -136,6 +136,8 @@ namespace WinAppArchivosGrupo1
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Se cancelo la operación de ingreso.", "Aviso",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
 
