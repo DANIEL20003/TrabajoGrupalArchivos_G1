@@ -169,7 +169,7 @@ namespace WinAppArchivosGrupo1
                 string rutaResources = Path.Combine(rutaProyecto, "Base_de_Datos");
                 string rutaArchivo = Path.Combine(rutaResources, "Productos.xml");
 
-                // Si la carpeta Resources no existe, créala
+                // Si la carpeta Base_de_Datos no existe, se la crea
                 if (!Directory.Exists(rutaResources))
                 {
                     Directory.CreateDirectory(rutaResources);
