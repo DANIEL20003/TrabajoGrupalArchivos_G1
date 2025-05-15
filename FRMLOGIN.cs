@@ -70,7 +70,7 @@ namespace WinAppArchivosGrupo1
         {
             try
             {
-                if (textBox1.Text == usuario1 || textBox1.Text == usuario2 || textBox1.Text == usuario3 || textBox1.Text == usuario4 || textBox1.Text == usuario5 || textBox1.Text == usuario6 || textBox1.Text == usuario7 || textBox1.Text == usuario8 || textBox1.Text == usuario9 || textBox2.Text == contra)
+                if ((textBox1.Text == usuario1 || textBox1.Text == usuario2 || textBox1.Text == usuario3 || textBox1.Text == usuario4 || textBox1.Text == usuario5 || textBox1.Text == usuario6 || textBox1.Text == usuario7 || textBox1.Text == usuario8 || textBox1.Text == usuario9) && textBox2.Text == contra)
                 {
                     Form1 objetopin = new Form1();
 

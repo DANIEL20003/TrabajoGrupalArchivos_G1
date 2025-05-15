@@ -1,11 +1,10 @@
 <?xml version="1.0" standalone="yes"?>
 <DataSet1 xmlns="http://tempuri.org/DataSet1.xsd">
-  <!-- Productos de escritura -->
   <TBL_Productos>
     <Codigo>1001</Codigo>
     <Tipo>Bolígrafos</Tipo>
     <Color>Azul</Color>
-    <Precio>12.50</Precio>
+    <Precio>12.5</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Bic</Marca>
     <Proveedor>DistriPapel</Proveedor>
@@ -31,7 +30,7 @@
     <Codigo>1003</Codigo>
     <Tipo>Rotuladores</Tipo>
     <Color>Multicolor</Color>
-    <Precio>25.90</Precio>
+    <Precio>25.9</Precio>
     <Volumen>Grande</Volumen>
     <Marca>Stabilo</Marca>
     <Proveedor>ColorArt</Proveedor>
@@ -40,13 +39,11 @@
     <Unidad_Venta>Paquete</Unidad_Venta>
     <Descripcion>Pack de 6 rotuladores punta gruesa</Descripcion>
   </TBL_Productos>
-
-  <!-- Cuadernos y libretas -->
   <TBL_Productos>
     <Codigo>2001</Codigo>
     <Tipo>Cuadernos</Tipo>
     <Color>Verde</Color>
-    <Precio>45.00</Precio>
+    <Precio>45</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Norma</Marca>
     <Proveedor>PapeleraCentral</Proveedor>
@@ -59,7 +56,7 @@
     <Codigo>2002</Codigo>
     <Tipo>Cuadernos</Tipo>
     <Color>Rosa</Color>
-    <Precio>38.50</Precio>
+    <Precio>38.5</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Milan</Marca>
     <Proveedor>EscolarPlus</Proveedor>
@@ -68,13 +65,11 @@
     <Unidad_Venta>Unidad</Unidad_Venta>
     <Descripcion>Cuaderno escolar 80 hojas cuadriculado</Descripcion>
   </TBL_Productos>
-
-  <!-- Material de dibujo -->
   <TBL_Productos>
     <Codigo>3001</Codigo>
     <Tipo>Reglas</Tipo>
     <Color>Transparente</Color>
-    <Precio>15.00</Precio>
+    <Precio>15</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Maped</Marca>
     <Proveedor>DibujoArt</Proveedor>
@@ -87,7 +82,7 @@
     <Codigo>3002</Codigo>
     <Tipo>Compás</Tipo>
     <Color>Metal</Color>
-    <Precio>32.00</Precio>
+    <Precio>32</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Staedtler</Marca>
     <Proveedor>GeometríaPro</Proveedor>
@@ -96,13 +91,11 @@
     <Unidad_Venta>Unidad</Unidad_Venta>
     <Descripcion>Compás metálico de precisión</Descripcion>
   </TBL_Productos>
-
-  <!-- Material de oficina -->
   <TBL_Productos>
     <Codigo>4001</Codigo>
     <Tipo>Gomas de borrar</Tipo>
     <Color>Blanco</Color>
-    <Precio>5.50</Precio>
+    <Precio>5.5</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Pelikan</Marca>
     <Proveedor>OficinaTotal</Proveedor>
@@ -115,7 +108,7 @@
     <Codigo>4002</Codigo>
     <Tipo>Sacapuntas</Tipo>
     <Color>Rojo</Color>
-    <Precio>12.00</Precio>
+    <Precio>12</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Bic</Marca>
     <Proveedor>UtilEscolar</Proveedor>
@@ -124,13 +117,11 @@
     <Unidad_Venta>Unidad</Unidad_Venta>
     <Descripcion>Sacapuntas doble orificio con depósito</Descripcion>
   </TBL_Productos>
-
-  <!-- Mochilas y estuches -->
   <TBL_Productos>
     <Codigo>5001</Codigo>
     <Tipo>Mochilas</Tipo>
     <Color>Negro</Color>
-    <Precio>120.00</Precio>
+    <Precio>120</Precio>
     <Volumen>Grande</Volumen>
     <Marca>Puma</Marca>
     <Proveedor>ModaEscolar</Proveedor>
@@ -143,7 +134,7 @@
     <Codigo>5002</Codigo>
     <Tipo>Estuches</Tipo>
     <Color>Azul</Color>
-    <Precio>45.50</Precio>
+    <Precio>45.5</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Artesco</Marca>
     <Proveedor>AccesoriosEscolares</Proveedor>
@@ -152,13 +143,11 @@
     <Unidad_Venta>Unidad</Unidad_Venta>
     <Descripcion>Estuche escolar con cremallera, 3 compartimentos</Descripcion>
   </TBL_Productos>
-
-  <!-- Más productos variados -->
   <TBL_Productos>
     <Codigo>6001</Codigo>
     <Tipo>Tijeras</Tipo>
     <Color>Rosa</Color>
-    <Precio>28.00</Precio>
+    <Precio>28</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Maped</Marca>
     <Proveedor>ArteCreativo</Proveedor>
@@ -171,7 +160,7 @@
     <Codigo>6002</Codigo>
     <Tipo>Pegamento</Tipo>
     <Color>Blanco</Color>
-    <Precio>18.50</Precio>
+    <Precio>18.5</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Pritt</Marca>
     <Proveedor>AdhesivosSA</Proveedor>
@@ -184,7 +173,7 @@
     <Codigo>6003</Codigo>
     <Tipo>Corrector</Tipo>
     <Color>Blanco</Color>
-    <Precio>22.00</Precio>
+    <Precio>22</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Pelikan</Marca>
     <Proveedor>OficinaTotal</Proveedor>
@@ -197,7 +186,7 @@
     <Codigo>6004</Codigo>
     <Tipo>Marcadores</Tipo>
     <Color>Negro</Color>
-    <Precio>32.50</Precio>
+    <Precio>32.5</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Stabilo</Marca>
     <Proveedor>ColorArt</Proveedor>
@@ -210,7 +199,7 @@
     <Codigo>6005</Codigo>
     <Tipo>Resaltadores</Tipo>
     <Color>Amarillo</Color>
-    <Precio>28.00</Precio>
+    <Precio>28</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Faber-Castell</Marca>
     <Proveedor>LibreríasUnidas</Proveedor>
@@ -219,13 +208,11 @@
     <Unidad_Venta>Paquete</Unidad_Venta>
     <Descripcion>Resaltadores fluorescentes, pack de 4 colores</Descripcion>
   </TBL_Productos>
-
-  <!-- Más productos de papelería -->
   <TBL_Productos>
     <Codigo>7001</Codigo>
     <Tipo>Cartulinas</Tipo>
     <Color>Blanco</Color>
-    <Precio>15.00</Precio>
+    <Precio>15</Precio>
     <Volumen>Grande</Volumen>
     <Marca>Norma</Marca>
     <Proveedor>PapeleraCentral</Proveedor>
@@ -238,7 +225,7 @@
     <Codigo>7002</Codigo>
     <Tipo>Blocs de notas</Tipo>
     <Color>Verde</Color>
-    <Precio>42.00</Precio>
+    <Precio>42</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Milan</Marca>
     <Proveedor>EscolarPlus</Proveedor>
@@ -251,7 +238,7 @@
     <Codigo>7003</Codigo>
     <Tipo>Post-it</Tipo>
     <Color>Amarillo</Color>
-    <Precio>25.50</Precio>
+    <Precio>25.5</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>3M</Marca>
     <Proveedor>OficinaTotal</Proveedor>
@@ -264,7 +251,7 @@
     <Codigo>7004</Codigo>
     <Tipo>Carpetas</Tipo>
     <Color>Rojo</Color>
-    <Precio>38.00</Precio>
+    <Precio>38</Precio>
     <Volumen>Grande</Volumen>
     <Marca>Artesco</Marca>
     <Proveedor>AccesoriosEscolares</Proveedor>
@@ -277,7 +264,7 @@
     <Codigo>7005</Codigo>
     <Tipo>Portaminas</Tipo>
     <Color>Negro</Color>
-    <Precio>35.00</Precio>
+    <Precio>35</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Pilot</Marca>
     <Proveedor>LibreríasUnidas</Proveedor>
@@ -286,13 +273,11 @@
     <Unidad_Venta>Unidad</Unidad_Venta>
     <Descripcion>Portaminas profesional 0.5mm con goma</Descripcion>
   </TBL_Productos>
-
-  <!-- Más productos de arte -->
   <TBL_Productos>
     <Codigo>8001</Codigo>
     <Tipo>Acuarelas</Tipo>
     <Color>Multicolor</Color>
-    <Precio>85.00</Precio>
+    <Precio>85</Precio>
     <Volumen>Grande</Volumen>
     <Marca>Faber-Castell</Marca>
     <Proveedor>ArteCreativo</Proveedor>
@@ -305,7 +290,7 @@
     <Codigo>8002</Codigo>
     <Tipo>Lápices de colores</Tipo>
     <Color>Multicolor</Color>
-    <Precio>65.00</Precio>
+    <Precio>65</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Staedtler</Marca>
     <Proveedor>DibujoArt</Proveedor>
@@ -318,7 +303,7 @@
     <Codigo>8003</Codigo>
     <Tipo>Pinceles</Tipo>
     <Color>Marrón</Color>
-    <Precio>28.00</Precio>
+    <Precio>28</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Artesco</Marca>
     <Proveedor>ColorArt</Proveedor>
@@ -331,7 +316,7 @@
     <Codigo>8004</Codigo>
     <Tipo>Témperas</Tipo>
     <Color>Blanco</Color>
-    <Precio>42.50</Precio>
+    <Precio>42.5</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Pelikan</Marca>
     <Proveedor>ArteCreativo</Proveedor>
@@ -344,7 +329,7 @@
     <Codigo>8005</Codigo>
     <Tipo>Block de dibujo</Tipo>
     <Color>Blanco</Color>
-    <Precio>55.00</Precio>
+    <Precio>55</Precio>
     <Volumen>Grande</Volumen>
     <Marca>Norma</Marca>
     <Proveedor>PapeleraCentral</Proveedor>
@@ -353,13 +338,11 @@
     <Unidad_Venta>Unidad</Unidad_Venta>
     <Descripcion>Block de dibujo A3, 20 hojas 180gr</Descripcion>
   </TBL_Productos>
-
-  <!-- Últimos productos -->
   <TBL_Productos>
     <Codigo>9001</Codigo>
     <Tipo>Grapadoras</Tipo>
     <Color>Negro</Color>
-    <Precio>48.00</Precio>
+    <Precio>48</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Maped</Marca>
     <Proveedor>OficinaTotal</Proveedor>
@@ -372,7 +355,7 @@
     <Codigo>9002</Codigo>
     <Tipo>Perforadoras</Tipo>
     <Color>Azul</Color>
-    <Precio>65.00</Precio>
+    <Precio>65</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Staples</Marca>
     <Proveedor>AccesoriosEscolares</Proveedor>
@@ -385,7 +368,7 @@
     <Codigo>9003</Codigo>
     <Tipo>Calculadoras</Tipo>
     <Color>Rosa</Color>
-    <Precio>120.00</Precio>
+    <Precio>120</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Casio</Marca>
     <Proveedor>TecnoEscolar</Proveedor>
@@ -398,7 +381,7 @@
     <Codigo>9004</Codigo>
     <Tipo>Agendas</Tipo>
     <Color>Morado</Color>
-    <Precio>85.00</Precio>
+    <Precio>85</Precio>
     <Volumen>Mediano</Volumen>
     <Marca>Moleskine</Marca>
     <Proveedor>EscolarPlus</Proveedor>
@@ -411,7 +394,7 @@
     <Codigo>9005</Codigo>
     <Tipo>Plastilina</Tipo>
     <Color>Multicolor</Color>
-    <Precio>45.00</Precio>
+    <Precio>45</Precio>
     <Volumen>Grande</Volumen>
     <Marca>Jovi</Marca>
     <Proveedor>ArteCreativo</Proveedor>
@@ -424,7 +407,7 @@
     <Codigo>9006</Codigo>
     <Tipo>Pegatinas</Tipo>
     <Color>Multicolor</Color>
-    <Precio>15.50</Precio>
+    <Precio>15.5</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>StickersFun</Marca>
     <Proveedor>ColorArt</Proveedor>
@@ -437,7 +420,7 @@
     <Codigo>9007</Codigo>
     <Tipo>Grapas</Tipo>
     <Color>Plateado</Color>
-    <Precio>8.00</Precio>
+    <Precio>8</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Maped</Marca>
     <Proveedor>OficinaTotal</Proveedor>
@@ -450,7 +433,7 @@
     <Codigo>9008</Codigo>
     <Tipo>Clips</Tipo>
     <Color>Plateado</Color>
-    <Precio>12.00</Precio>
+    <Precio>12</Precio>
     <Volumen>Pequeño</Volumen>
     <Marca>Staples</Marca>
     <Proveedor>AccesoriosEscolares</Proveedor>
@@ -463,7 +446,7 @@
     <Codigo>9009</Codigo>
     <Tipo>Posters</Tipo>
     <Color>Multicolor</Color>
-    <Precio>28.00</Precio>
+    <Precio>28</Precio>
     <Volumen>Grande</Volumen>
     <Marca>Educa</Marca>
     <Proveedor>PapeleraCentral</Proveedor>
@@ -476,7 +459,7 @@
     <Codigo>9010</Codigo>
     <Tipo>Organizadores</Tipo>
     <Color>Transparente</Color>
-    <Precio>75.00</Precio>
+    <Precio>75</Precio>
     <Volumen>Grande</Volumen>
     <Marca>Artesco</Marca>
     <Proveedor>OficinaTotal</Proveedor>
