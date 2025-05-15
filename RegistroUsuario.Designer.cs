@@ -313,7 +313,7 @@
             // 
             this.btn_Cancelar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancelar.Location = new System.Drawing.Point(317, 318);
+            this.btn_Cancelar.Location = new System.Drawing.Point(243, 300);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(106, 40);
             this.btn_Cancelar.TabIndex = 1;
@@ -414,7 +414,7 @@
             // 
             this.btn_Aceptar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Aceptar.Location = new System.Drawing.Point(42, 324);
+            this.btn_Aceptar.Location = new System.Drawing.Point(82, 298);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(106, 40);
             this.btn_Aceptar.TabIndex = 0;
@@ -455,11 +455,14 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CausesValidation = false;
             this.dateTimePicker1.Location = new System.Drawing.Point(154, 223);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2025, 5, 15, 9, 9, 59, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(199, 20);
             this.dateTimePicker1.TabIndex = 13;
+            this.dateTimePicker1.Value = new System.DateTime(2025, 5, 15, 0, 0, 0, 0);
             // 
             // label1
             // 

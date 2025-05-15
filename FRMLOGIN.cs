@@ -16,8 +16,13 @@ namespace WinAppArchivosGrupo1
 {
     public partial class FRMLOGIN : Form
     {
+        List<UsuarioInfo> listaUsuarios = new List<UsuarioInfo>();
+
         private SoundPlayer soundPlayer;
-        String usuario4 = "Erik Yumi";
+
+        byte intentos = 3;
+        string contra = "1234";
+        /*String usuario4 = "Erik Yumi";
         String usuario1 = "Daniel Quiguiri";
         String usuario2 = "Danny Allauca";
         String usuario3 = "Angel Gadvay";
@@ -25,9 +30,7 @@ namespace WinAppArchivosGrupo1
         String usuario6 = "Andrea Vinueza";
         String usuario7 = "Alexander Villalva";
         String usuario8 = "Mateo López";
-        String usuario9 = "Lorena Aguirre";
-
-        string contra = "1234";
+        String usuario9 = "Lorena Aguirre"*/
         public FRMLOGIN()
         {
             InitializeComponent();
@@ -38,16 +41,16 @@ namespace WinAppArchivosGrupo1
         {
             if (e.KeyChar == (Char)Keys.Enter)
             {
-                if (string.IsNullOrWhiteSpace(textBox1.Text))
+                if (string.IsNullOrWhiteSpace(txbUsuario.Text))
                 {
                     MessageBox.Show("El campo de usuario no puede estar vacío.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    textBox1.Focus();
+                    txbUsuario.Focus();
                     e.Handled = true;
                     return;
                 }
 
                 
-                string[] usuariosPermitidos = {
+                /*string[] usuariosPermitidos = {
                     usuario1, usuario2, usuario3, usuario4, usuario5,
                     usuario6, usuario7, usuario8, usuario9
                 };
@@ -59,14 +62,14 @@ namespace WinAppArchivosGrupo1
                     textBox1.Focus();
                     e.Handled = true;
                     return;
-                }
+                }*/
 
-                textBox2.Focus();
+                txbContraseña.Focus();
             }
         }
 
 
-        private void btnregistrar_Click(object sender, EventArgs e)
+        /*private void btnregistrar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -96,7 +99,7 @@ namespace WinAppArchivosGrupo1
                 MessageBox.Show("Ha ocurrido un error, intente de nuevo");
             }
 
-        }
+        }*/
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
@@ -140,16 +143,90 @@ namespace WinAppArchivosGrupo1
         {
             if (e.KeyChar == (Char)Keys.Enter)
             {
-                btnregistrar.PerformClick();
+                btnIniciar.PerformClick();
             }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            RegistroUsuario llmarform = new RegistroUsuario();
-            llmarform.ShowDialog();
+            RegistroUsuario llamarform = new RegistroUsuario();
+            if (llamarform.ShowDialog() == DialogResult.OK)
+            {
+                string nuevoUsuario = llamarform.usuarioIngresar;
+                string nuevaContraseña = llamarform.contraseñaIngresar;
+
+                
+                listaUsuarios.Add(new UsuarioInfo(nuevoUsuario,nuevaContraseña));
+            }
+
+        }
+
+        private void FRMLOGIN_Load_1(object sender, EventArgs e)
+        {
+            listaUsuarios.Add(new UsuarioInfo("Daniel Quiguiri", contra));
+            listaUsuarios.Add(new UsuarioInfo("Danny Allauca", contra));
+            listaUsuarios.Add(new UsuarioInfo("Angel Gadvay", contra));
+            listaUsuarios.Add(new UsuarioInfo("Erik Yumi", contra));
+            listaUsuarios.Add(new UsuarioInfo("Kevin Parra", contra));
+            listaUsuarios.Add(new UsuarioInfo("Andrea Vinueza", contra));
+            listaUsuarios.Add(new UsuarioInfo("Alexander Villalva", contra));
+            listaUsuarios.Add(new UsuarioInfo("Mateo López", contra));
+            listaUsuarios.Add(new UsuarioInfo("Lorena Aguirre", contra));
+        }
+
+        private void btnregistrar_Click(object sender, EventArgs e)
+        {
+            string usuarioIngresado = txbUsuario.Text;
+            string contraseñaIngresada = txbContraseña.Text;
+
+            bool existe = listaUsuarios.Any(u => u.Usuario == usuarioIngresado && u.Contraseña == contraseñaIngresada);
+
+            if (existe)
+            {
+                MessageBox.Show("Inicio de sesión exitoso", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Form1 objform = new Form1();
+                objform.ShowDialog();
+            }
+            else
+            {
+                intentos -= 1;
+                MessageBox.Show($"Le quedan {intentos} intentos", "Usuario o contraseña incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+                if (intentos > 0)
+                {
+                    txbUsuario.Clear();
+                    txbContraseña.Clear();
+                    txbUsuario.Focus();
+                }
+                else
+                {
+                    txbUsuario.Clear();
+                    txbContraseña.Clear();
+                    txbUsuario.Enabled = false;
+                    txbContraseña.Enabled = false;
+                    btnIniciar.Enabled = false;
+                    btnRegistrarse.Enabled = false;
+                }
+                
+            }
+        }
+
+        private void txbContraseña_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
+    public class UsuarioInfo
+    {
+        public string Usuario { get; set; }
+        public string Contraseña { get; set; }
+
+        public UsuarioInfo(string usuario, string contraseña)
+        {
+            Usuario = usuario;
+            Contraseña = contraseña;
+        }
     }
+}
     
 

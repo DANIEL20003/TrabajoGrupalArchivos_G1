@@ -13,6 +13,10 @@ namespace WinAppArchivosGrupo1
 {
     public partial class RegistroUsuario : Form
     {
+        public string usuarioIngresar { get; private set; }
+        public string contraseñaIngresar { get; private set; }
+
+
         string cedula, nombre, apellido, direccion, ciudad, email = "";
         char estadoCivil = 'S', genero = 'M';
         int edadEnAnios;
@@ -150,7 +154,8 @@ namespace WinAppArchivosGrupo1
                     return;
                 }
 
-         
+                usuarioIngresar = usuarioNombre;
+                usuarioIngresar = contraseña;
                 Usuario nuevoUsuario = new Usuario(usuarioNombre, contraseña);
 
               
@@ -165,7 +170,7 @@ namespace WinAppArchivosGrupo1
                 textBox3.Clear();
                 textBox4.Clear();
                 textBox5.Clear();
-
+                this.DialogResult = DialogResult.OK;
                 this.Close();
             }
             catch (Exception ex)
@@ -218,6 +223,7 @@ namespace WinAppArchivosGrupo1
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
+            this.Close();
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
