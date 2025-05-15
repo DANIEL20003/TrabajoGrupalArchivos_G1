@@ -99,7 +99,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>0.51492cm</Top>
-            <Left>0.32692cm</Left>
+            <Left>0.64442cm</Left>
             <Height>1.19267cm</Height>
             <Width>15.22117cm</Width>
             <Style>
@@ -343,7 +343,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>2.11349cm</Top>
-            <Left>0.32692cm</Left>
+            <Left>1.27942cm</Left>
             <Height>1.2cm</Height>
             <Width>7.5cm</Width>
             <ZIndex>1</ZIndex>
@@ -359,15 +359,15 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Proveedor.Value</GroupExpression>
+                      <GroupExpression>=Fields!Material.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Proveedor.Value</Value>
+                      <Value>=Fields!Material.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Proveedor.Value</Label>
+                  <Label>=Fields!Material.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -375,9 +375,6 @@
               <ChartMembers>
                 <ChartMember>
                   <Label>Material</Label>
-                </ChartMember>
-                <ChartMember>
-                  <Label>Marca</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
@@ -392,48 +389,18 @@
                       <ChartDataLabel>
                         <Style />
                       </ChartDataLabel>
-                      <Style />
+                      <Style>
+                        <Border>
+                          <Color>#00ffffff</Color>
+                        </Border>
+                      </Style>
                       <ChartMarker>
                         <Style />
                       </ChartMarker>
                       <DataElementOutput>Output</DataElementOutput>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Type>Bar</Type>
-                  <Style />
-                  <ChartEmptyPoints>
-                    <Style />
-                    <ChartMarker>
-                      <Style />
-                    </ChartMarker>
-                    <ChartDataLabel>
-                      <Style />
-                    </ChartDataLabel>
-                  </ChartEmptyPoints>
-                  <ValueAxisName>Primary</ValueAxisName>
-                  <CategoryAxisName>Primary</CategoryAxisName>
-                  <ChartSmartLabel>
-                    <CalloutLineColor>Black</CalloutLineColor>
-                    <MinMovingDistance>0pt</MinMovingDistance>
-                  </ChartSmartLabel>
-                </ChartSeries>
-                <ChartSeries Name="Marca">
-                  <ChartDataPoints>
-                    <ChartDataPoint>
-                      <ChartDataPointValues>
-                        <Y>=Count(Fields!Marca.Value)</Y>
-                      </ChartDataPointValues>
-                      <ChartDataLabel>
-                        <Style />
-                      </ChartDataLabel>
-                      <Style />
-                      <ChartMarker>
-                        <Style />
-                      </ChartMarker>
-                      <DataElementOutput>Output</DataElementOutput>
-                    </ChartDataPoint>
-                  </ChartDataPoints>
-                  <Type>Bar</Type>
+                  <Type>Shape</Type>
                   <Style />
                   <ChartEmptyPoints>
                     <Style />
@@ -709,9 +676,10 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Material y Marca de cada Proveedor</Caption>
+                <Caption>Cantidad de cada de Material</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontFamily>Arial Black</FontFamily>
                   <FontSize>9pt</FontSize>
                   <FontWeight>Normal</FontWeight>
                   <TextAlign>Left</TextAlign>
@@ -739,10 +707,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.79599cm</Top>
-            <Left>8.04809cm</Left>
-            <Height>6.08715cm</Height>
-            <Width>10.89607cm</Width>
+            <Top>1.77891cm</Top>
+            <Left>9.00059cm</Left>
+            <Height>8.28556cm</Height>
+            <Width>8.48836cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -754,7 +722,7 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>3.29017in</Height>
+        <Height>4.01794in</Height>
         <Style />
       </Body>
       <Width>7.80208in</Width>
